@@ -18,7 +18,7 @@
       ><img src="../assets/images/logo.png" alt=""
     /></a>
 
-    <p class="fs-3 text-secondary fw-bold pt-2">PKF MYANMAR</p>
+    <p class="fs-3  fw-bold pt-2" style="color: #0f3780;">PKF MYANMAR</p>
   </div>
   <nav class="navbar navbar-expand-lg navbar-light main-navbar">
     <div class="container">
@@ -258,7 +258,7 @@ img {
 
 /* ---top header---  */
 header {
-  background: #555658;
+  background: #0f3780;
 }
 .social-media {
   display: flex;

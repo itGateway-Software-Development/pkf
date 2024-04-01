@@ -1,6 +1,6 @@
 <template>
   <section class="about">
-    <img src="../assets/images/indo-carousel02.jpg" alt="" />
+    <img src="../assets/images/carousel2.jpg" alt="" />
     <h2 v-if="service == 'assurance'">AUDIT & ASSURANCE</h2>
     <h2 v-if="service == 'our-services'">OUR SERVICES</h2>
     <h2 v-if="service == 'advisory'">ADVISORY</h2>

@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <img src="../assets/images/indo-carousel01.jpg" alt="" />
+    <img src="../assets/images/carousel1.jpg" alt="" />
     <h2 v-if="category == 'pkf'">ABOUT PKF MYANMAR</h2>
     <h2 v-if="category == 'thida'">ABOUT THIDA & PARTNERS</h2>
 

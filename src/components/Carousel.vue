@@ -35,74 +35,39 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img
+          src="../assets/images/carousel1.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption text-start">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../assets/images/carousel2.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption text-start">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../assets/images/carousel3.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption text-start">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
           src="../assets/images/carousel4.jpg"
           class="d-block w-100"
           alt="..."
         />
         <div class="carousel-caption text-start">
-          <h3>
-            PKF Hadiwinata is a top 10 accounting <br />
-            &eadquartered in the heart
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetutemporibus tempore sunt
-            repellendus, distinctio amet dolor?
-          </p>
-          <button class="btn btn-primary">Click</button>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="../assets/images/indo-carousel01.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption text-start">
-          <h3>
-            PKF Hadiwinata is a top 10 accounting <br />
-            &eadquartered in the heart
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetutemporibus tempore sunt
-            repellendus, distinctio amet dolor?
-          </p>
-          <button class="btn btn-primary">Click</button>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="../assets/images/indo-carousel02.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption text-start">
-          <h3>
-            PKF Hadiwinata is a top 10 accounting <br />
-            &eadquartered in the heart
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetutemporibus tempore sunt
-            repellendus, distinctio amet dolor?
-          </p>
-          <button class="btn btn-primary">Click</button>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="../assets/images/indo-carousel03.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
-        <div class="carousel-caption text-start">
-          <h3>
-            PKF Hadiwinata is a top 10 accounting <br />
-            &eadquartered in the heart
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetutemporibus tempore sunt
-            repellendus, distinctio amet dolor?
-          </p>
-          <button class="btn btn-primary">Click</button>
+          
         </div>
       </div>
     </div>

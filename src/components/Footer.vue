@@ -64,8 +64,7 @@
       <div class="col-lg-4 col-md-12 footer-contact-info">
         <div class="col-lg-12 col-md-4">
           <img src="../assets/images/logo.png" alt="" />
-          <h2>PKF MYANMAR</h2>
-          <h2>Thida & Partners Limited</h2>
+          <h2 style="color: #0f3780;">PKF MYANMAR</h2>
         </div>
         <div class="col-lg-12 col-md-6">
           <div class="social">
