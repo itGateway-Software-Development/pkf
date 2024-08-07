@@ -78,8 +78,7 @@
           <div class="social">
             <i class="fa-solid fa-location-dot"></i>
             <span>
-              11C, Stadium View Condo, Corner of Bomin Yaung Road and Mandalay
-              Street, Mingalartaungnyunt Township, Yangon, Myanmar.
+              706-708, 7th Floor, Bld B, Gonyi Residence, Corner of Upper Pansodan Rd. and Myanma Gonyi St., Mingalar Taung Nyunt T/S, Yangon, Myanmar.
             </span>
           </div>
         </div>
