@@ -2,8 +2,8 @@
   <div class="homepage">
     <Carousel></Carousel>
     <Welcome></Welcome>
-    <Event></Event>
-    <HomeNews></HomeNews>
+    <!-- <Event></Event> -->
+    <!-- <HomeNews></HomeNews> -->
   </div>
 </template>
 

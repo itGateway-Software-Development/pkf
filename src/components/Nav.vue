@@ -175,7 +175,7 @@
             </div>
           </li>
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <router-link
               to="/news-events"
               class="nav-link"
@@ -194,7 +194,7 @@
               }"
               >CAREERS</router-link
             >
-          </li>
+          </li> -->
           <li class="nav-item">
             <router-link
               to="/contact-us"

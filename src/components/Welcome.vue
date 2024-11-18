@@ -11,7 +11,7 @@
       Myanmar
     </p>
     <div class="about-us">
-      <a href="#">About us </a><i class="fa-solid fa-chevron-right"></i>
+      <router-link to="/about-us">About us <i class="fa-solid fa-chevron-right"></i> </router-link>
     </div>
     <div class="category-link">
       <router-link to="/services/assurance">
