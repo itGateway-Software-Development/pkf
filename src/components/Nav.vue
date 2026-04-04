@@ -112,7 +112,7 @@
                       <div
                         class="col-sm-12 col-md-10 col-lg-8 pl-2 d-flex align-items-center"
                       >
-                        <a href="/services/advisory"><h5>Advisory</h5></a>
+                        <router-link to="/services/advisory"><h5>Advisory</h5></router-link>
                       </div>
                     </div>
                   </div>
@@ -126,7 +126,7 @@
                       <div
                         class="col-sm-12 col-md-10 col-lg-8 pl-2 d-flex align-items-center"
                       >
-                        <a href="/services/tax"><h5>Tax</h5></a>
+                        <router-link to="/services/tax"><h5>Tax</h5></router-link>
                       </div>
                     </div>
                   </div>
@@ -143,8 +143,8 @@
                       <div
                         class="col-sm-12 col-md-10 col-lg-8 pl-2 d-flex align-items-center"
                       >
-                        <a href="/services/corporate"
-                          ><h5>Corporate Secretarial</h5></a
+                        <router-link to="/services/corporate"
+                          ><h5>Corporate Secretarial</h5></router-link
                         >
                       </div>
                     </div>
@@ -162,8 +162,8 @@
                       <div
                         class="col-sm-12 col-md-10 col-lg-8 pl-2 d-flex align-items-center"
                       >
-                        <a href="/services/account-financial"
-                          ><h5>Accounting and Financial Reporting</h5></a
+                        <router-link to="/services/account-financial"
+                          ><h5>Accounting & Financial Reporting</h5></router-link
                         >
                       </div>
                     </div>
@@ -183,6 +183,7 @@
               >NEWS & EVENTS</router-link
             >
           </li>
+          <!-- CAREERS HIDDEN - uncomment to restore
           <li class="nav-item">
             <router-link
               to="/careers/careers"
@@ -193,6 +194,7 @@
               >CAREERS</router-link
             >
           </li>
+          -->
           <li class="nav-item">
             <router-link
               to="/contact-us"
@@ -342,7 +344,7 @@ header {
   font-weight: 400;
 }
 .active-sub-menu {
-  color: #6ebf08;
+  color: #0045b6;
 }
 
 /* --- main navbar end---  */

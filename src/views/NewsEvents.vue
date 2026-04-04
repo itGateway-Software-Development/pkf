@@ -17,11 +17,13 @@
             </div>
 
             <div class="col-lg-9 col-md-8">
-                <a href="/contact-us" class="float-end contact-btn me-4">Contact Us</a>
-                <p class="show-link">
-                    <router-link to="/">Home</router-link>&nbsp;/&nbsp;
-                    News & Events
-                </p>
+                <div class="breadcrumb-row">
+                    <p class="show-link mb-0">
+                        <router-link to="/">Home</router-link>&nbsp;/&nbsp;
+                        News & Events
+                    </p>
+                    <a href="/contact-us" class="contact-btn">Contact Us</a>
+                </div>
 
                 <!-- NEWS TAB -->
                 <div v-if="category == 'news'" class="row mt-3 pt-3">
@@ -513,6 +515,15 @@ import { onMounted, watch, ref } from 'vue'
         transform: scale(1.05);
         color: #fff;
     }
+    .breadcrumb-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 12px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
     .contact-btn {
         background: #0045b6;
         color: #fff;
@@ -520,6 +531,8 @@ import { onMounted, watch, ref } from 'vue'
         border-radius: 5px;
         text-decoration: none;
         font-size: 14px;
+        white-space: nowrap;
+        flex-shrink: 0;
     }
     .show-link a {
         color: #0045b6;

@@ -80,7 +80,7 @@ export default {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  object-position: center;
+  object-position: center 30%;
   filter: brightness(0.4);
 }
 .service-content {
@@ -132,7 +132,7 @@ export default {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    object-position: center;
+    object-position: center 30%;
     filter: brightness(0.4);
   }
   .about h2 {

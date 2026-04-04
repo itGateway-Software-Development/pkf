@@ -53,7 +53,7 @@
       </div>
       <div class="carousel-item">
         <img
-          src="../assets/images/carousel3.jpg"
+          src="../assets/images/bagan5.jpg"
           class="d-block w-100"
           alt="..."
         />
@@ -110,7 +110,7 @@ export default {};
 
 .carousel-item img {
   width: 100%;
-  height: 700px;
+  height: 550px;
   object-fit: cover;
 }
 .carousel-caption h3 {

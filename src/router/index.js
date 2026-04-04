@@ -23,12 +23,13 @@ const routes = [
     name: 'NewsEvents',
     component: () => import('../views/NewsEvents.vue')
   },
-  {
-    path: '/careers/:career',
-    name: 'Carrers',
-    component: () => import('../views/Careers.vue'),
-    props: true,
-  },
+  // CAREERS HIDDEN - uncomment to restore
+  // {
+  //   path: '/careers/:career',
+  //   name: 'Carrers',
+  //   component: () => import('../views/Careers.vue'),
+  //   props: true,
+  // },
   {
     path: '/news-events/:event',
     name: 'EventDetail',

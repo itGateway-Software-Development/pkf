@@ -7,7 +7,7 @@
       >&nbsp;/&nbsp; Accounting & Finicial Report
     </p>
     <div class="about-content">
-      <h3>Accounting and Financial Reporting</h3>
+      <h3>Accounting & Financial Reporting</h3>
       <p>
         Thida & Partners Ltd. provides comprehensive accounting services and
         assists you in the preparation of financial reports in accordance with
