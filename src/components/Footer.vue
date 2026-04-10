@@ -14,7 +14,7 @@
             </p>
           </div>
           <div class="social-links-wrapper d-flex gap-3 mb-4">
-            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/pkf-myanmar-a4a151298" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://www.facebook.com/profile.php?id=61552517021210" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
           </div>
           
