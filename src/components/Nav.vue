@@ -2,7 +2,7 @@
   <header>
     <div class="container">
       <div class="social-media">
-        <div class="linkedin"><i class="fa-brands fa-linkedin"></i></div>
+        <a href="https://www.linkedin.com/in/pkf-myanmar-a4a151298" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://www.facebook.com/profile.php?id=61552517021210" target="_blank" class="fb"><i class="fa-brands fa-square-facebook"></i></a>
       </div>
     </div>
@@ -340,8 +340,9 @@ header {
 .active-menu {
   background: #0045b6;
   color: #fff !important;
-  font-size: 10px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
 }
 .active-sub-menu {
   color: #0045b6;
