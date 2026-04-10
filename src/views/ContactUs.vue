@@ -21,7 +21,7 @@
     
     <div class="row mt-5 form">
       <div class="col-lg-6 ps-0">
-        <form action="https://formspree.io/f/xbdpjrak" method="POST">
+        <form action="https://formspree.io/f/meepbzrv" method="POST">
           <div class="form-group mb-2">
             <label for="">Full Name <span>*</span></label>
             <input type="text" class="form-control" name="FullName" required />
