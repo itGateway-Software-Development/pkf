@@ -23,17 +23,33 @@ section {
     font-size: 13px;
 }
 .contact-btn {
-    background-color: #0045b6;
+    background: linear-gradient(135deg, #0045b6 0%, #002d7a 100%);
     border: none;
     font-size: 14px;
-    padding: 5px 20px;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 8px 24px;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 69, 182, 0.3);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 69, 182, 0.4);
+    background: linear-gradient(135deg, #0056e0 0%, #003694 100%);
+    color: #fff;
 }
 
 @media(max-width:450px) {
     .contact-btn {
-        font-size: px;
+        font-size: 12px;
+        padding: 6px 16px;
     }
 }
