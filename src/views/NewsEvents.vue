@@ -34,6 +34,52 @@
                         <button class="lang-btn" :class="{'active-lang': newsLanguage == 'en'}" @click="newsLanguage = 'en'">English</button>
                     </div>
 
+                    <!-- News Card 5
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mb-3">
+                                    <img src="../assets/images/newspaper.jpg" alt="New News Article">
+                                </div>
+                                <div class="col-lg-9 col-md-8">
+                                    <h5>06-APRIL-2026</h5>
+                                    <h4 v-if="newsLanguage == 'my'">မြန်မာနိုင်ငံစာရင်းကောင်စီ၏ ညွှန်ကြားချက်</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Myanmar Accountancy Council Directive</h4>
+                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">မြန်မာနိုင်ငံစာရင်းကောင်စီသည် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ၏ နောက်ဆုံးထုတ်ပြန်ထားသော ပိတ်ဆို့အရေးယူမှုစာရင်းများကို လိုက်နာဆောင်ရွက်ရန် စာရင်းလုပ်ငန်းများအားလုံးသို့ ၂၀၂၆ ခုနှစ်၊ ဧပြီလ ၆ ရက်နေ့တွင် ညွှန်ကြားချက်တစ်ရပ် ထုတ်ပြန်ခဲ့သည် ။ စာရင်းလုပ်ငန်းများအနေဖြင့် အဆိုပါ ဆုံးဖြတ်ချက်အမှတ်များ (SC/16323၊ SC/16324 နှင့် SC/16325) ကို အချိန်နှင့်တစ်ပြေးညီ ဝင်ရောက်ကြည့်ရှုပြီး မိမိတို့၏ ဝက်ဘ်ဆိုက် (သို့မဟုတ်) Facebook စာမျက်နှာများတွင် လွှင့်တင်ဆောင်ရွက်ရမည်ဖြစ်သည် ။ ဆောင်ရွက်ပြီးစီးမှု အခြေအနေကို အထောက်အထားများနှင့်တကွ ၂၀၂၆ ခုနှစ်၊ ဧပြီလ ၂၀ ရက်နေ့ နောက်ဆုံးထား၍ ကောင်စီရုံးသို့ မပျက်မကွက် ပြန်လည်အစီရင်ခံတင်ပြရမည်ဖြစ်သည် ။</p>
+                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On April 6, 2026, the Myanmar Accountancy Council issued an official directive instructing all accounting firms and businesses to strictly comply with the recent UN Security Council Sanctions List updates. Accounting entities must review the updates (SC/16323, SC/16324, and SC/16325) and publish the information on their official websites or Facebook pages. Proof of compliance must be submitted to the Council no later than April 20, 2026.</p>
+                                    <div class="d-flex gap-3 flex-wrap mt-3">
+                                        <a href="/downloads/MAC.pdf" download class="read-more">
+                                            <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download PDF 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- News Card 4 -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mb-3">
+                                    <img src="../assets/images/newspaper.jpg" alt="New News Article">
+                                </div>
+                                <div class="col-lg-9 col-md-8">
+                                    <h5>26-MARCH-2026</h5>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ၏ ပိတ်ဆို့အရေးယူမှုစာရင်း ထပ်မံထည့်သွင်းမှု</h4>
+                                    <h4 v-if="newsLanguage == 'en'">UN Security Council Sanctions List Updates</h4>
+                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီသည် သတင်းထုတ်ပြန်ချက် SC/16323၊ SC/16324 နှင့် SC/16325 တို့မှတစ်ဆင့် ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့အရေးယူမှုစာရင်းသို့ လူပုဂ္ဂိုလ် (၃) ဦးကို ထပ်မံထည့်သွင်းလိုက်သည်။ အဆိုပါ ထပ်မံထည့်သွင်းခံရသူများဖြစ်သည့် Abd El Hamid Salim Ibrahim Brukan Al-Khatouni ၊ Sami Jasim Muhammad Jaata Al-Jaburi  နှင့် Hamidah Nabagala တို့သည် ကုလသမဂ္ဂ ပဋိညာဉ်စာတမ်းအရ ပိုင်ဆိုင်မှုများ ထိန်းချုပ်ခံရခြင်း၊ ခရီးသွားလာခွင့် ပိတ်ပင်ခံရခြင်းနှင့် လက်နက်ရောင်းဝယ်မှု ပိတ်ဆို့ခံရခြင်းများ သက်ရောက်မည်ဖြစ်သည်။</p>
+                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">The UN Security Council Committee has issued press releases SC/16323, SC/16324, and SC/16325, adding three new individuals to the ISIL (Da'esh) and Al-Qaida Sanctions List. The listed individuals 'Abd El Hamid Salim Ibrahim Brukan Al-Khatouni', 'Sami Jasim Muhammad Jaata Al-Jaburi', and 'Hamidah Nabagala' are now subject to an asset freeze, travel ban, and arms embargo under Chapter VII of the UN Charter.</p>
+                                    <div class="d-flex gap-3 flex-wrap mt-3">
+                                        <a href="/downloads/sanctionlist.pdf" download class="read-more">
+                                            <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download PDF 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- News Card 3 -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new">
@@ -49,7 +95,7 @@
                                     <p v-if="newsLanguage == 'en'" class="myanmar-text">The National Defence and Security Council of Myanmar has enacted the 2026 Union Tax Law (Law No. 18/2026) , effective 1 April 2026. The law establishes the tax rates and provisions for special goods tax, commercial tax, income tax, and gemstone tax.</p>
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/2026-tax.pdf" download class="read-more">
-                                            <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download 2026 Tax Law (PDF)
+                                            <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download PDF
                                         </a>
                                     </div>
                                 </div>
@@ -72,7 +118,7 @@
                                     <p v-if="newsLanguage == 'en'" class="myanmar-text">The State Administration Council of Myanmar has enacted the 2026 Anti-Money Laundering Law (Law No. 16/2026), effective 11 March 2026. The law establishes comprehensive obligations for banks, financial institutions, and DNFBPs covering customer due diligence, suspicious transaction reporting, record keeping, and compliance with FATF standards.</p>
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/AML-law-2026.pdf" download class="read-more">
-                                            <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download AML Law 2026 (PDF)
+                                            <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download PDF
                                         </a>
                                     </div>
                                 </div>
@@ -95,7 +141,7 @@
                                     <p v-if="newsLanguage == 'en'" class="myanmar-text">The Myanmar Accountancy Council has issued a notice regarding the UNSCR Sanction List (SC/16306, 27 February 2026). All relevant firms and DNFBPs are required to check and update their websites and webpages in accordance with the latest sanctions list update.</p>
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/224.pdf" download class="read-more">
-                                            <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download Myanmar Notice (PDF)
+                                            <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download PDF
                                         </a>
                                         <a href="/downloads/unscr-sanction.pdf" download class="read-more read-more-en">
                                             <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download UN Press Release (PDF)
@@ -499,20 +545,26 @@ import { onMounted, watch, ref } from 'vue'
         font-size: 16px;
     }
     .read-more {
-        background: #0045b6;
-        color: #fff;
+        background: linear-gradient(135deg, #0045b6 0%, #002d7a 100%);
+        border: none;
+        font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
         font-size: 13px;
         padding: 8px 20px;
-        border-radius: 5px;
-        transition: .5s ease;
+        color: #fff;
+        border-radius: 6px;
         text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 69, 182, 0.3);
         display: inline-block;
-    }
-    .read-more-en {
-        background: #0045b6;
+        cursor: pointer;
     }
     .read-more:hover {
-        transform: scale(1.05);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 69, 182, 0.4);
+        background: linear-gradient(135deg, #0056e0 0%, #003694 100%);
         color: #fff;
     }
     .breadcrumb-row {
@@ -525,12 +577,6 @@ import { onMounted, watch, ref } from 'vue'
         margin-bottom: 8px;
     }
     .contact-btn {
-        background: #0045b6;
-        color: #fff;
-        padding: 5px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 14px;
         white-space: nowrap;
         flex-shrink: 0;
     }
