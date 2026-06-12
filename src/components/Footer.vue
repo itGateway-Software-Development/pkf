@@ -33,7 +33,7 @@
               </div>
               <div class="contact-text">
                 706-708, 7th Floor, Bld B, Gonyi Residence,<br />
-                Corner of Upper Pansodan Rd. &amp; Myanma Gonyi St.,<br />
+                Corner of Upper Pansodan Rd. &amp; Myanma Gonyi Rd.,<br />
                 Mingalar Taung Nyunt T/S, Yangon, Myanmar.
               </div>
             </li>
