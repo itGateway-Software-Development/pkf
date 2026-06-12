@@ -183,7 +183,6 @@
               >NEWS & EVENTS</router-link
             >
           </li>
-          <!-- CAREERS HIDDEN - uncomment to restore
           <li class="nav-item">
             <router-link
               to="/careers/careers"
@@ -191,10 +190,9 @@
               :class="{
                 'active-menu': currentRoute.substring(0, 8) == '/careers',
               }"
-              >CAREERS</router-link
+              >JOB OPPORTUNITIES</router-link
             >
           </li>
-          -->
           <li class="nav-item">
             <router-link
               to="/contact-us"
