@@ -23,13 +23,18 @@ const routes = [
     name: 'NewsEvents',
     component: () => import('../views/NewsEvents.vue')
   },
-  // CAREERS HIDDEN - uncomment to restore
-  // {
-  //   path: '/careers/:career',
-  //   name: 'Carrers',
-  //   component: () => import('../views/Careers.vue'),
-  //   props: true,
-  // },
+  {
+    path: '/careers/:career',
+    name: 'Careers',
+    component: () => import('../views/Careers.vue'),
+    props: true,
+  },
+  {
+    path: '/careers/:career/apply',
+    name: 'ApplyJob',
+    component: () => import('../views/ApplyJob.vue'),
+    props: true,
+  },
   {
     path: '/news-events/:event',
     name: 'EventDetail',

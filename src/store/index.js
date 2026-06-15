@@ -1,60 +1,23 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createStore } from 'vuex'
 
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
+export default createStore({
+  state: {
+    currentRoute: '',
   },
-  {
-    path: '/about-us',
-    name: 'AboutUs',
-    component: () => import('../views/AboutUs.vue')
+  getters: {
+    getCurrentRoute : (state) => state.currentRoute
   },
-  {
-    path: '/services/:service',
-    name: 'Services',
-    component: () => import('../views/Services.vue'),
-    props: true
+  mutations: {
+    setCurrentRoute : (state, route) => {
+      state.currentRoute = route;
+    }
   },
-  {
-    path: '/news-events',
-    name: 'NewsEvents',
-    component: () => import('../views/NewsEvents.vue')
+  actions: {
+    getRoute : (context, route) => {
+      context.commit('setCurrentRoute', route)
+    }
+
   },
-  {
-    path: '/careers/:career',
-    name: 'Careers',
-    component: () => import('../views/Careers.vue'),
-    props: true,
-  },
-  {
-    path: '/careers/:career/apply',
-    name: 'ApplyJob',
-    component: () => import('../views/ApplyJob.vue'),
-    props: true,
-  },
-  {
-    path: '/news-events/:event',
-    name: 'EventDetail',
-    component: () => import('../views/EventDetail.vue')
-  },
-  {
-    path: '/contact-us',
-    name: 'ContactUs',
-    component: () => import('../views/ContactUs.vue')
-  },
-  {
-    path: '/:pathMatch(.*)*',
-    component: () => import('../views/404Page.vue')
+  modules: {
   }
- 
-]
-
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
 })
-
-export default router
