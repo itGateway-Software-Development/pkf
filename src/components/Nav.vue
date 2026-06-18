@@ -180,7 +180,17 @@
               :class="{
                 'active-menu': currentRoute.substring(0, 12) == '/news-events',
               }"
-              >NEWS & EVENTS</router-link
+              >NEWS &amp; EVENTS</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link
+              to="/people"
+              class="nav-link"
+              :class="{
+                'active-menu': currentRoute.substring(0, 7) == '/people',
+              }"
+              >PEOPLE</router-link
             >
           </li>
           <li class="nav-item">

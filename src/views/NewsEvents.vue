@@ -57,6 +57,31 @@
                         </div>
                     </div> -->
 
+                    <!-- News Card 5 — SC/16365, 21 May 2026 -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mb-3">
+                                    <img src="../assets/images/newspaper.jpg" alt="UN SC/16365 Sanctions List">
+                                </div>
+                                <div class="col-lg-9 col-md-8">
+                                    <h5>21-MAY-2026</h5>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ ဝင်ခွင့်ခုနစ်ခုကို ဖယ်ရှားချက် (SC/16365)</h4>
+                                    <h4 v-if="newsLanguage == 'en'">UN Security Council Removes Seven Entries from ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16365)</h4>
+
+                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">၂၀၂၆ ခုနှစ် မေလ ၂၁ ရက်တွင် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်များ ၁၂၆၇ (၁၉၉၉)၊ ၁၉၈၉ (၂၀၁၁) နှင့် ၂၂၅၃ (၂၀၁၅) တို့အရ ဖွဲ့စည်းသည့် ကော်မတီသည် ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့အရေးယူမှုစာရင်းမှ ပုဂ္ဂိုလ် ၇ ဦးကို ဖယ်ရှားလိုက်ကြောင်း ကြေငြာသည်။ ဖယ်ရှားခံရသောသူများမှာ — Majeed Abdul Chaudhry၊ Mohammed Tufail၊ Mustafa Hajji Muhammad Khan၊ Hafiz Abdul Salam Bhuttavi၊ Aamir Ali Chaudhry၊ Maulana Fazlullah နှင့် Abdul Rehman Makki တို့ဖြစ်ကြသည်။ ဤဆောင်ရွက်ချက်ကြောင့် ကုလသမဂ္ဂ ပဋိညာဉ်စာတမ်း သတ်မှတ်ချက်အရ ထိုသူများအပေါ် ချမှတ်ထားသော ပိုင်ဆိုင်မှုများ ထိန်းချုပ်ခြင်း၊ ခရီးသွားလာခွင့် ပိတ်ပင်ခြင်းနှင့် လက်နက်တားဆီးမှုများ ရပ်ဆိုင်းသွားမည်ဖြစ်သည်။</p>
+                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On 21 May 2026, the Security Council Committee established pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) removed seven entries from the ISIL (Da'esh) and Al-Qaida Sanctions List. The delisted individuals are: Majeed Abdul Chaudhry (QDi.054), Mohammed Tufail (QDi.056), Mustafa Hajji Muhammad Khan (QDi.306), Hafiz Abdul Salam Bhuttavi (QDi.307), Aamir Ali Chaudhry (QDi.312), Maulana Fazlullah (QDi.352), and Abdul Rehman Makki (QDi.433). As a result, the assets freeze, travel ban and arms embargo under Security Council resolution 2734 (2024) no longer apply to these individuals.</p>
+
+                                    <div class="d-flex gap-3 flex-wrap mt-3">
+                                        <a href="https://press.un.org/en/2026/sc16365.doc.htm" target="_blank" rel="noopener" class="read-more">
+                                            <i class="fa-solid fa-up-right-from-square me-2"></i>View UN Press Release
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- News Card 4 -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new">
@@ -566,6 +591,10 @@ import { onMounted, watch, ref } from 'vue'
         box-shadow: 0 6px 20px rgba(0, 69, 182, 0.4);
         background: linear-gradient(135deg, #0056e0 0%, #003694 100%);
         color: #fff;
+    }
+    .read-more i,
+    .read-more * {
+        color: #ffffff !important;
     }
     .breadcrumb-row {
         display: flex;

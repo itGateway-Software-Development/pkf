@@ -3,8 +3,6 @@
         <div class="career-header">
             <img src="../assets/images/carrer.jpg" alt="">
             <h2 class="banner-careers">JOB OPPORTUNITIES</h2>
-          
-
         </div>
 
         <div class="container job-container my-5">

@@ -46,6 +46,11 @@ const routes = [
     component: () => import('../views/ContactUs.vue')
   },
   {
+    path: '/people',
+    name: 'People',
+    component: () => import('../views/People.vue')
+  },
+  {
     path: '/:pathMatch(.*)*',
     component: () => import('../views/404Page.vue')
   }
