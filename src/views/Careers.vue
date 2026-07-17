@@ -1,8 +1,7 @@
 <template>
     <section>
-        <div class="career-header">
-            <img src="../assets/images/carrer.jpg" alt="">
-            <h2 class="banner-careers">JOB OPPORTUNITIES</h2>
+        <div class="page-banner">
+            <h2 class="banner-title">JOB OPPORTUNITIES</h2>
         </div>
 
         <div class="container job-container my-5">
@@ -143,40 +142,35 @@ export default {
     .career-header {
         position: relative;
     }
-    .career-header img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        object-position: center;
-        filter: brightness(.6);
-    }
-/* shared base style for all banners */
-.banner-careers {
-    position: absolute;
-    color: #fff;
-    font-weight: bolder;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.page-banner {
+    width: 100%;
+    height: 200px;
     background: #104982;
-    padding: 10px 50px;
-    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.banner-title {
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #fff;
+    margin: 0;
     white-space: nowrap;
 }
-
-/* individual positioning for each */
-.banner-careers { top: 50%; }
 
    .career-content {
         padding: 20px 9%;
    }
 
    @media (max-width:990px) {
-        .career-header img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-            object-position: center;
-            filter: brightness(.6);
+        .page-banner {
+            height: 120px;
+        }
+        .banner-title {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
         }
         .career-form {
             top: 20%;
@@ -237,13 +231,6 @@ export default {
    }
 
    @media (max-width:450px) {
-        .career-header img {
-            width: 100%;
-            height: 270px;
-            object-fit: cover;
-            object-position: center;
-            filter: brightness(.6);
-        }
         .career-form {
             top: 13%;
             left: 43%;

@@ -1,9 +1,8 @@
 <template>
   <div class="about">
-    <div class="position-relative">
-      <img src="../assets/images/carousel1.jpg" alt="" />
-      <h2 v-if="category == 'pkf'" class="banner-pkf">ABOUT PKF MYANMAR</h2>
-      <h2 v-if="category == 'thida'" class="banner-thida">ABOUT THIDA & PARTNERS</h2>
+    <div class="page-banner">
+      <h2 v-if="category == 'pkf'" class="banner-title">ABOUT PKF MYANMAR</h2>
+      <h2 v-if="category == 'thida'" class="banner-title">ABOUT THIDA & PARTNERS</h2>
     </div>
 
     <div class="row mt-5 about-body">
@@ -69,29 +68,23 @@ export default {
 .about-body {
   padding: 30px 9%;
 }
-.about img {
+.page-banner {
   width: 100%;
-  max-height: 320px;
-  object-fit: cover;
-  object-position: center;
-  filter: brightness(0.4);
-}
-/* shared base style for all banners */
-.banner-pkf,
-.banner-thida {
-  position: absolute;
-  color: #fff;
-  font-weight: bolder;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 200px;
   background: #104982;
-  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.banner-title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #fff;
+  margin: 0;
   white-space: nowrap;
 }
-
-/* individual positioning for each */
-.banner-pkf { top: 50%; }
-.banner-thida { top: 50%; }
 .about-category {
     background: #e7e8ea;
     padding: 10px 15px;
@@ -130,34 +123,17 @@ export default {
   padding: 5px 10px;
 }
 
-@media (max-width: 990px) {
-  .about h2 {
-    position: absolute;
-    color: #fff;
-    font-weight: bolder;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 22px;
-    background: #3a76b1;
-    padding: 15px 25px;
+@media (max-width: 768px) {
+  .page-banner {
+    height: 120px;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
   }
 }
 
 @media (max-width: 450px) {
-  .about img {
-    width: 100%;
-    height: 250px;
-  }
-  .about h2 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 15px;
-    background: #3a76b1;
-    padding: 12px 15px;
-    text-align: center;
-  }
   .about-body {
     display: flex;
     flex-direction: column-reverse;

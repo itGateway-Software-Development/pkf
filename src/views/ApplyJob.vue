@@ -1,8 +1,7 @@
 <template>
     <section class="apply-page-section">
-        <div class="apply-header">
-            <img src="../assets/images/carrer.jpg" alt="Apply Now Banner">
-            <h2 class="banner-apply">APPLY NOW</h2>
+        <div class="page-banner">
+            <h2 class="banner-title">APPLY NOW</h2>
         </div>
 
         <div class="container my-5 apply-container">
@@ -257,24 +256,22 @@ export default {
     position: relative;
 }
 
-.apply-header img {
+.page-banner {
     width: 100%;
-    height: 320px;
-    object-fit: cover;
-    object-position: center;
-    filter: brightness(0.4);
+    height: 200px;
+    background: #104982;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.banner-apply {
-    position: absolute;
+.banner-title {
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 4px;
     color: #fff;
-    font-weight: bolder;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #104982;
-    padding: 10px 50px;
-    z-index: 10;
+    margin: 0;
     white-space: nowrap;
 }
 
@@ -346,24 +343,23 @@ export default {
     }
 }
 
-@media (max-width: 990px) {
-    .banner-apply {
-        font-size: 22px;
-        padding: 15px 25px;
+@media (max-width: 768px) {
+    .page-banner {
+        height: 120px;
     }
+    .banner-title {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 990px) {
     .apply-container {
         padding: 0 5%;
     }
 }
 
 @media (max-width: 450px) {
-    .apply-header img {
-        height: 250px;
-    }
-    .banner-apply {
-        font-size: 15px;
-        padding: 12px 15px;
-    }
     .apply-container {
         padding: 0 3%;
     }

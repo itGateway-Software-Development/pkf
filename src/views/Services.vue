@@ -1,14 +1,13 @@
 <template>
   <section class="about">
-    <div class="position-relative">
-      <img src="../assets/images/carousel2.jpg" alt="" />
-      <h2 v-if="service == 'assurance'" class="banner-assurance">AUDIT & ASSURANCE</h2>
-      <h2 v-if="service == 'our-services'" class="banner-our-services">OUR SERVICES</h2>
-      <h2 v-if="service == 'advisory'" class="banner-advisory">ADVISORY</h2>
-      <h2 v-if="service == 'tax'" class="banner-tax">TAX</h2>
+    <div class="page-banner">
+      <h2 v-if="service == 'assurance'" class="banner-title">AUDIT & ASSURANCE</h2>
+      <h2 v-if="service == 'our-services'" class="banner-title">OUR SERVICES</h2>
+      <h2 v-if="service == 'advisory'" class="banner-title">ADVISORY</h2>
+      <h2 v-if="service == 'tax'" class="banner-title">TAX</h2>
 
-      <h2 v-if="service == 'corporate'" class="banner-corporate">CORPORATE SECRETARIAL SERVICE</h2>
-      <h2 v-if="service == 'account-financial'" class="banner-account-financial">ACCOUNTING & FINANCIAL REPORTING</h2>
+      <h2 v-if="service == 'corporate'" class="banner-title">CORPORATE SECRETARIAL SERVICE</h2>
+      <h2 v-if="service == 'account-financial'" class="banner-title">ACCOUNTING & FINANCIAL REPORTING</h2>
     </div>
 
     <div class="row mt-5 service-content">
@@ -76,74 +75,38 @@ export default {
 .about {
   position: relative;
 }
-.about img {
+.page-banner {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
-  object-position: center 30%;
-  filter: brightness(0.4);
+  height: 200px;
+  background: #104982;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.banner-title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #fff;
+  margin: 0;
+  white-space: nowrap;
 }
 .service-content {
   padding: 30px 9%;
 }
-/* shared base style for all banners */
-.banner-assurance,
-.banner-our-services,
-.banner-advisory,
-.banner-tax,
-.banner-business,
-.banner-tech,
-.banner-corporate,
-.banner-account-financial {
-  position: absolute;
-  color: #fff;
-  font-weight: bolder;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #104982;
-  padding: 10px 50px;
-  white-space: nowrap;
-}
 
-/* individual positioning for each */
-.banner-assurance { top: 50%; }
-.banner-our-services { top: 50%; }
-.banner-advisory { top: 50%; }
-.banner-tax { top: 50%; }
-/* .banner-business { top: 50%; } */
-/* .banner-tech { top: 50%; } */
-.banner-corporate { top: 50%; }
-.banner-account-financial { top: 50%; }
-
-@media (max-width: 990px) {
-  .about h2 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #104982;
-    padding: 10px 30px;
-    font-size: 20px;
-    text-align: center;
+@media (max-width: 768px) {
+  .page-banner {
+    height: 120px;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
   }
 }
 
 @media (max-width: 450px) {
-  .about img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: center 30%;
-    filter: brightness(0.4);
-  }
-  .about h2 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #104982;
-    padding: 10px 30px;
-    font-size: 16px;
-    text-align: center;
-  }
   .service-content {
     display: flex;
     flex-direction: column-reverse;

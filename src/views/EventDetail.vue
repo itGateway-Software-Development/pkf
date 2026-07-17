@@ -1,8 +1,7 @@
 <template>
     <section>
-        <div class="detail-hero">
-            <img src="../assets/images/eventdetail.jpg" alt="">
-            <h2>LATEST NEWS</h2>
+        <div class="page-banner">
+            <h2 class="banner-title">LATEST NEWS</h2>
         </div>
         <div class="row mt-5 detail-header">
             <div class="col-lg-3 col-md-4">
@@ -68,23 +67,23 @@ import {  onMounted, onUpdated, ref } from 'vue'
     .detail-hero {
         position: relative;
     }
-    .detail-hero img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        object-position: center;
-        filter: brightness(.4);
-    }
-    .detail-hero h2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        color: #fff;
-        font-weight: bold;
-        background: #1d599a;
-        padding: 10px 40px;
-    }
+.page-banner {
+    width: 100%;
+    height: 200px;
+    background: #104982;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.banner-title {
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #fff;
+    margin: 0;
+    white-space: nowrap;
+}
     .detail-header {
         padding: 0px 12%;
     }
@@ -96,18 +95,16 @@ import {  onMounted, onUpdated, ref } from 'vue'
         color: #5d5d5e;
     }
 
+    @media (max-width: 768px) {
+        .page-banner {
+            height: 120px;
+        }
+        .banner-title {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+    }
     @media (max-width:450px) {
-        .detail-hero img {
-            width: 100%;
-            height: 230px;
-            object-fit: cover;
-            object-position: center;
-            filter: brightness(.4);
-        }
-        .detail-hero h2 {
-            padding: 10px 30px;
-            font-size: 15px;
-        }
         .detail-header {
             display: flex;
             flex-direction: column-reverse;

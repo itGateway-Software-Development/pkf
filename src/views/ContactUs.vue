@@ -1,10 +1,7 @@
 <template>
   <section>
-    <div class="contact-header">
-      <div class="position-relative">
-        <img class="event-img" src="/downloads/banner4.jpeg" alt="">
-        <h2 class="banner-contact">CONTACT US</h2>
-      </div>
+    <div class="page-banner">
+      <h2 class="banner-title">CONTACT US</h2>
     </div>
     <div class="contact-content">
       <p class="show-link">
@@ -91,24 +88,22 @@ export default {
   border-radius: 8px;      /* Optional: rounds the corners */
 }
 
-.contact-header img {
+.page-banner {
   width: 100%;
-  height: 320px;
-  object-fit: cover;
-  object-position: center 10%;
-  filter: brightness(0.4); /* Darkened to match the About Us page */
+  height: 200px;
+  background: #104982;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-/* Consolidated Banner Style */
-.banner-contact {
-  position: absolute;
+.banner-title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 4px;
   color: #fff;
-  font-weight: bolder;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #104982;
-  padding: 10px 50px;
+  margin: 0;
   white-space: nowrap;
 }
 
@@ -158,13 +153,17 @@ form button {
   padding: 30px 17%;
 }
 
-@media (max-width: 990px) {
-  /* Updated to target the correct class and keep it centered */
-  .banner-contact {
-    font-size: 22px;
-    padding: 15px 25px;
+@media (max-width: 768px) {
+  .page-banner {
+    height: 120px;
   }
-  
+  .banner-title {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 990px) {
   .form {
     margin: 0 auto !important;
   }
@@ -175,18 +174,8 @@ form button {
 }
 
 @media (max-width: 450px) {
-  .contact-header img {
-    height: 250px; /* Adjusted to match About Us mobile height */
-  }
-  
   .contact-content {
     padding: 20px 10%;
-  }
-  
-  /* Updated to target the correct class and keep it centered */
-  .banner-contact {
-    font-size: 15px;
-    padding: 12px 15px;
   }
   
   .form {

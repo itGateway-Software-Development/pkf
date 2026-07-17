@@ -1,9 +1,8 @@
 <template>
     <section class="events">
-        <div class="position-relative">
-            <img class="event-img" src="/downloads/banner2.jpeg" alt="">
-            <h2 v-if="category == 'news'" class="banner-news">NEWS</h2>
-            <h2 v-if="category == 'events'" class="banner-events">EVENTS</h2>
+        <div class="page-banner">
+            <h2 v-if="category == 'news'" class="banner-title">NEWS</h2>
+            <h2 v-if="category == 'events'" class="banner-title">EVENTS</h2>
         </div>
 
         <div class="row mt-5 events-header">
@@ -440,29 +439,23 @@ import { onMounted, watch, ref } from 'vue'
     .events {
         position: relative;
     }
-    .events .event-img {
-        width: 100%;
-        height: 320px;
-        object-fit: cover;
-        object-position:  center 30%;
-        filter: brightness(.4);
-    }
-/* shared base style for all banners */
-.banner-news,
-.banner-events {
-    position: absolute;
-    color: #fff;
-    font-weight: bolder;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.page-banner {
+    width: 100%;
+    height: 200px;
     background: #104982;
-    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.banner-title {
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #fff;
+    margin: 0;
     white-space: nowrap;
 }
-
-/* individual positioning for each */
-.banner-news { top: 50%; }
-.banner-events { top: 50%; }
     .events-header {
         padding: 0px 9%;
     }
@@ -612,5 +605,14 @@ import { onMounted, watch, ref } from 'vue'
     .show-link a {
         color: #0045b6;
         text-decoration: none;
+    }
+    @media (max-width: 768px) {
+        .page-banner {
+            height: 120px;
+        }
+        .banner-title {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
     }
 </style>

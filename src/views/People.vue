@@ -171,7 +171,7 @@ export default {
         email: 'tinzarlynn@pkf.com.mm',
         phone: '09-757628060',
         linkedin: null,
-        photo: '/downloads/people/tinzarlynn.jpg',
+        photo: '/downloads/people/tinzarlynn.png',
         bio: [
           'Tin Zar Lynn is a seasoned finance and audit professional with over 12 years of progressive experience across public, private, and multinational sectors. She holds a Bachelor of Commerce from Yangon Institute of Economics and Myanmar CPA, and has completed her MBA coursework and thesis from Meiktila University of Economics.',
           'Her core expertise spans financial auditing, corporate reporting, compliance, and financial planning. With a strong foundation in accounting principles and a deep understanding of both IFRS and Myanmar regulatory requirements, she brings a well-rounded perspective to financial leadership.',
