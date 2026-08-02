@@ -218,10 +218,10 @@
 </template>
 
 <script>
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 export default {
   props: ["currentRoute"],
-  setup() {
+  setup(props) {
     let isSticky = ref(false);
     let isShow = ref(false);
 
@@ -240,6 +240,22 @@ export default {
     let handleScroll = () => {
       isSticky.value = window.pageYOffset;
     };
+
+    watch(
+      () => props.currentRoute,
+      () => {
+        isShow.value = false;
+        const navbar = document.getElementById("navbarSupportedContent");
+        if (navbar && navbar.classList.contains("show")) {
+          navbar.classList.remove("show");
+        }
+        const toggler = document.querySelector(".navbar-toggler");
+        if (toggler) {
+          toggler.setAttribute("aria-expanded", "false");
+          toggler.classList.add("collapsed");
+        }
+      }
+    );
 
     onMounted(() => {
       window.addEventListener("scroll", handleScroll);
