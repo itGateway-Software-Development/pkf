@@ -111,19 +111,6 @@ export default {
         ]
       },
       {
-        name: 'Myint Myint San',
-        position: 'Engagement Partner',
-        email: 'myintmyitsan@pkf.com.mm',
-        phone: '09-450022623',
-        linkedin: 'www.linkedin.com/in/myint-myint-san',
-        photo: '/downloads/people/myint.png',
-        bio: [
-          'Myint is a certified public accountant (CPA) with more than 15 years of experience in auditing in Myanmar. She also worked for two years as an accountant in a private company. She has served both local and international businesses. Her expertise includes standard audits and special financial checks. As an Engagement Partner, she brings strong auditing experience across many industries.',
-          'She graduated with a Bachelor\'s degree in Commerce from the Yangon Institute of Economics in 2006. She earned a Diploma in International Financial Reporting Standards (Dip. IFR) from ACCA in 2015, and a Diploma in Business Law from the University of Yangon in 2016.',
-          'She has audit experience with public and non-profit projects funded by international partners. This includes work for projects by Relief International, Oxfam Novib, and Finn Church Aid.'
-        ]
-      },
-      {
         name: 'Chaw Nandar Aung',
         position: 'Director',
         email: 'chawnandaraung@pkf.com.mm',
@@ -135,6 +122,19 @@ export default {
           'She has a Bachelor\'s degree in Science and a Master of Business Administration (MBA) from the Swiss School of Business Research. She also holds diplomas in accounting (LCCI UK), human resources, and business management.',
           'Chaw regularly takes courses to update her skills. She has studied accounting at the Auditor General\'s Office, business management at UMFCCI, labor law, trademarks, and copyright rules.',
           'Currently, Chaw is a Board Director and leads the Client Services team. She focuses on providing helpful business services to keep clients satisfied and helps them reach their financial and business goals.'
+        ]
+      },
+      {
+        name: 'Myint Myint San',
+        position: 'Engagement Partner',
+        email: 'myintmyitsan@pkf.com.mm',
+        phone: '09-450022623',
+        linkedin: 'www.linkedin.com/in/myint-myint-san',
+        photo: '/downloads/people/myint.png',
+        bio: [
+          'Myint is a certified public accountant (CPA) with more than 15 years of experience in auditing in Myanmar. She also worked for two years as an accountant in a private company. She has served both local and international businesses. Her expertise includes standard audits and special financial checks. As an Engagement Partner, she brings strong auditing experience across many industries.',
+          'She graduated with a Bachelor\'s degree in Commerce from the Yangon Institute of Economics in 2006. She earned a Diploma in International Financial Reporting Standards (Dip. IFR) from ACCA in 2015, and a Diploma in Business Law from the University of Yangon in 2016.',
+          'She has audit experience with public and non-profit projects funded by international partners. This includes work for projects by Relief International, Oxfam Novib, and Finn Church Aid.'
         ]
       },
       {
