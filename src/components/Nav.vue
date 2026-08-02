@@ -313,6 +313,7 @@ header {
   color: #0045b6 !important;
   font-size: 13px;
   font-weight: 600;
+  padding: 8px 16px !important;
 }
 .navbar-brand i {
   color: #0045b6;
