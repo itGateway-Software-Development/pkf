@@ -40,7 +40,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -396,12 +396,18 @@ header {
   .col-md-12.col-lg-3.col-sm-12 {
     margin: 10px 0 0 !important;
   }
-  .navbar-toggler-icon {
-    width: 1rem;
-    height: 1rem;
-  }
   .navbar-toggler {
-    padding: 5px 10px;
+    padding: 6px 10px;
+    border: 1.5px solid #0045b6 !important;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  .navbar-toggler i {
+    color: #0045b6 !important;
+    font-size: 1.2rem;
+  }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 69, 182, 0.25) !important;
   }
 }
 </style>
