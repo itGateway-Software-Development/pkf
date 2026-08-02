@@ -156,10 +156,13 @@ form button {
 @media (max-width: 768px) {
   .page-banner {
     height: 120px;
+    padding: 0 15px;
   }
   .banner-title {
     font-size: 1.5rem;
     letter-spacing: 2px;
+    white-space: normal;
+    text-align: center;
   }
 }
 

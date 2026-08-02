@@ -33,6 +33,31 @@
                         <button class="lang-btn" :class="{'active-lang': newsLanguage == 'en'}" @click="newsLanguage = 'en'">English</button>
                     </div>
 
+                    <!-- News Card 6 — SC/16407, 8 July 2026 -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mb-3">
+                                    <img src="../assets/images/newspaper.jpg" alt="UN SC/16407 Sanctions List">
+                                </div>
+                                <div class="col-lg-9 col-md-8">
+                                    <h5>08-JULY-2026</h5>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်းတစ်ခု ပြင်ဆင်ချက် (SC/16407)</h4>
+                                    <h4 v-if="newsLanguage == 'en'">UN Security Council Amends One Entry on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16407)</h4>
+
+                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">၂၀၂၆ ခုနှစ် ဇူလိုင်လ ၈ ရက်တွင် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်များ ၁၂၆၇ (၁၉၉၉)၊ ၁၉၈၉ (၂၀၁၁) နှင့် ၂၂၅၃ (၂၀၁၅) တို့အရ ဖွဲ့စည်းသည့် ကော်မတီသည် ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့အရေးယူမှုစာရင်းရှိ Hamidah Nabaggala (QDi.439) ၏ အချက်အလက်ကို ပြင်ဆင်သတ်မှတ်ခဲ့သည်။ ဤပြင်ဆင်ချက်အရ ၎င်းပုဂ္ဂိုလ်သည် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၂၇၃၄ (၂၀၂၄) အရ ချမှတ်ထားသော ပိုင်ဆိုင်မှုများ ထိန်းချုပ်ခြင်း၊ ခရီးသွားလာခွင့် ပိတ်ပင်ခြင်းနှင့် လက်နက်တားဆီးပိတ်ဆို့မှုဆိုင်ရာ အစီအမံများအောက်တွင် ဆက်လက်တည်ရှိနေမည်ဖြစ်သည်။</p>
+                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On 8 July 2026, the Security Council Committee established pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) amended one entry (Hamidah Nabaggala, QDi.439) on the ISIL (Da'esh) and Al-Qaida Sanctions List. The individual remains subject to the assets freeze, travel ban, and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), adopted under Chapter VII of the UN Charter.</p>
+
+                                    <div class="d-flex gap-3 flex-wrap mt-3">
+                                        <a href="https://press.un.org/en/2026/sc16407.doc.htm" target="_blank" rel="noopener" class="read-more">
+                                            <i class="fa-solid fa-up-right-from-square me-2"></i>View UN Press Release
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- News Card 5
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new">
@@ -609,10 +634,13 @@ import { onMounted, watch, ref } from 'vue'
     @media (max-width: 768px) {
         .page-banner {
             height: 120px;
+            padding: 0 15px;
         }
         .banner-title {
             font-size: 1.5rem;
             letter-spacing: 2px;
+            white-space: normal;
+            text-align: center;
         }
     }
 </style>

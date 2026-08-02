@@ -429,10 +429,13 @@ export default {
   }
   .people-banner {
     height: 120px;
+    padding: 0 15px;
   }
   .banner-title {
     font-size: 1.5rem;
     letter-spacing: 2px;
+    white-space: normal;
+    text-align: center;
   }
   .person-header {
     flex-direction: column;

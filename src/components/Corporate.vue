@@ -7,7 +7,7 @@
       >&nbsp;/&nbsp; Corporate Secretarial
     </p>
     <div class="about-content">
-      <h3>CORPORATE SECRETARIAL SERVICE</h3>
+      <h3>Corporate Secretarial Service</h3>
       <p>
         Thida & Partners Ltd. provides the complete range of corporate
         secretarial services to corporates in Myanmar.
