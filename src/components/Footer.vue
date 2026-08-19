@@ -64,11 +64,19 @@
               <i class="fa-solid fa-circle-check mt-1 me-2" style="color: #ffffff;"></i>
               <span>PKF Myanmar member of PKF International</span>
             </p>
-            <p class="small lh-base m-0 text-justify">
+            <p class="small lh-base mb-3 text-justify">
               PKF Myanmar is a member firm of the PKF International Limited
               family of legally independent firms and does not accept any
               responsibility or liability for the actions or inactions of any
               individual member or correspondent firm or firms.
+            </p>
+            <hr class="my-3" style="border-top: 1px solid rgba(255, 255, 255, 0.15); margin: 0;" />
+            <p class="mt-3 mb-3 d-flex align-items-start fw-bold" style="font-size: 0.95rem;">
+              <i class="fa-solid fa-circle-check mt-1 me-2" style="color: #ffffff;"></i>
+              <span>PKF Myanmar သည် PKF International ၏ အဖွဲ့ဝင် ဖြစ်သည်</span>
+            </p>
+            <p class="small lh-base m-0 text-justify" style="font-size: 0.85rem; opacity: 0.85;">
+              PKF Myanmar သည် ဥပဒေအရ သီးခြားရပ်တည်လျက်ရှိသော လုပ်ငန်းစုများပါဝင်သည့် PKF International Limited ၏ အဖွဲ့ဝင်လုပ်ငန်းတစ်ခုဖြစ်ပြီး မည်သည့်အဖွဲ့ဝင်လုပ်ငန်း သို့မဟုတ် ကိုယ်စားလှယ်လုပ်ငန်းတစ်ခုချင်းစီ၏ လုပ်ဆောင်ချက် သို့မဟုတ် ပျက်ကွက်မှုများအတွက် တစ်စုံတစ်ရာ တာဝန်ယူခြင်း သို့မဟုတ် တာဝန်ခံခြင်း မရှိပါ။
             </p>
           </div>
         </div>

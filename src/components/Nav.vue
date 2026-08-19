@@ -16,7 +16,13 @@
       ><img src="../assets/images/logo.png" alt=""
     /></a>
 
-    <p class="fs-3  fw-bold pt-2" style="color: #0f3780;">PKF MYANMAR</p>
+    <p
+      @click="handleSecretClick"
+      class="fs-3 fw-bold pt-2"
+      style="color: #0f3780; cursor: pointer; user-select: none;"
+    >
+      PKF MYANMAR
+    </p>
   </div>
   <nav class="navbar navbar-expand-lg navbar-light main-navbar">
     <div class="container">
@@ -219,9 +225,13 @@
 
 <script>
 import { onMounted, ref, watch } from "vue";
+import { useRouter } from "vue-router";
 export default {
   props: ["currentRoute"],
   setup(props) {
+    const router = useRouter();
+    const clickCount = ref(0);
+    let clickTimeout = null;
     let isSticky = ref(false);
     let isShow = ref(false);
 
@@ -239,6 +249,19 @@ export default {
 
     let handleScroll = () => {
       isSticky.value = window.pageYOffset;
+    };
+
+    const handleSecretClick = () => {
+      clearTimeout(clickTimeout);
+      clickCount.value++;
+      if (clickCount.value >= 5) {
+        clickCount.value = 0;
+        router.push("/secret-portal");
+      } else {
+        clickTimeout = setTimeout(() => {
+          clickCount.value = 0;
+        }, 3000);
+      }
     };
 
     watch(
@@ -261,7 +284,7 @@ export default {
       window.addEventListener("scroll", handleScroll);
     });
 
-    return { isSticky, isShow, showSubMenu, toggleSubMenu };
+    return { isSticky, isShow, showSubMenu, toggleSubMenu, handleSecretClick };
   },
 };
 </script>

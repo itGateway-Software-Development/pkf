@@ -51,6 +51,11 @@ const routes = [
     component: () => import('../views/People.vue')
   },
   {
+    path: '/secret-portal',
+    name: 'SecretPortal',
+    component: () => import('../views/SecretPortal.vue')
+  },
+  {
     path: '/:pathMatch(.*)*',
     component: () => import('../views/404Page.vue')
   }
