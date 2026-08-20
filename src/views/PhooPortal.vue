@@ -176,6 +176,13 @@
                                         {{ row[col] }}
                                       </td>
                                     </tr>
+                                    <!-- Total row -->
+                                    <tr class="table-info fw-bold">
+                                      <td class="text-dark">Total</td>
+                                      <td v-for="col in headers" :key="col">
+                                        {{ getColumnTotal(categoryRows, col) }}
+                                      </td>
+                                    </tr>
                                   </tbody>
                                 </table>
                               </div>
@@ -503,8 +510,34 @@ export default {
 
       XLSX.writeFile(workbook, `Sorted_Ledger_Report.xlsx`)
     }
+    const nonSummableColumns = ['date', 'account', 'person', 'description', 'ex rate', 'exrate', 'ex-rate', 'rate', 'id', 'sr', 'no', 's.no'];
+    const shouldSumColumn = (col) => {
+      const c = String(col).toLowerCase().trim();
+      return !nonSummableColumns.some(ex => c.includes(ex) || ex.includes(c));
+    };
+
+    const getColumnTotal = (categoryRows, col) => {
+      if (!shouldSumColumn(col)) return '';
+      
+      let hasNumber = false;
+      let total = 0;
+      for (const row of categoryRows) {
+        const val = row[col];
+        if (val !== undefined && val !== null && val !== '') {
+          const parsed = parseFloat(String(val).replace(/,/g, ''));
+          if (!isNaN(parsed)) {
+            hasNumber = true;
+            total += parsed;
+          }
+        }
+      }
+      
+      if (!hasNumber) return '';
+      return total.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+    };
 
     return {
+      getColumnTotal,
       isLoggedIn,
       username,
       password,
