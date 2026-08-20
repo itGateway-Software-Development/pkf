@@ -8,7 +8,7 @@
             <div class="logo-wrapper bg-white d-inline-block px-3 py-2 rounded mb-3 shadow-sm">
               <img src="../assets/images/logo.png" alt="PKF Myanmar Logo" class="footer-logo" />
             </div>
-            <h3 class="fw-bold mb-3 tracking-wide text-uppercase" style="color: #ffffff; font-size: 1.4rem;">PKF Myanmar</h3>
+            <h3 class="brand-title-footer mb-3 text-uppercase">PKF <span class="brand-myanmar-footer">Myanmar</span></h3>
             <p class="footer-tagline pe-md-4">
               Empowering your business with expert audit, tax, and advisory solutions in Myanmar and beyond.
             </p>
@@ -65,18 +65,15 @@
               <span>PKF Myanmar member of PKF International</span>
             </p>
             <p class="small lh-base mb-3 text-justify">
-              PKF Myanmar is a member firm of the PKF International Limited
-              family of legally independent firms and does not accept any
-              responsibility or liability for the actions or inactions of any
-              individual member or correspondent firm or firms.
+              PKF Myanmar is a member firm of PKF International Limited, a family of legally independent firms. PKF Myanmar does not accept any responsibility or liability for the actions (Acts) or omissions of other member firms or correspondent firms of PKF International Limited.
             </p>
             <hr class="my-3" style="border-top: 1px solid rgba(255, 255, 255, 0.15); margin: 0;" />
             <p class="mt-3 mb-3 d-flex align-items-start fw-bold" style="font-size: 0.95rem;">
               <i class="fa-solid fa-circle-check mt-1 me-2" style="color: #ffffff;"></i>
               <span>PKF Myanmar သည် PKF International ၏ အဖွဲ့ဝင် ဖြစ်သည်</span>
             </p>
-            <p class="small lh-base m-0 text-justify" style="font-size: 0.85rem; opacity: 0.85;">
-              PKF Myanmar သည် ဥပဒေအရ သီးခြားရပ်တည်လျက်ရှိသော လုပ်ငန်းစုများပါဝင်သည့် PKF International Limited ၏ အဖွဲ့ဝင်လုပ်ငန်းတစ်ခုဖြစ်ပြီး မည်သည့်အဖွဲ့ဝင်လုပ်ငန်း သို့မဟုတ် ကိုယ်စားလှယ်လုပ်ငန်းတစ်ခုချင်းစီ၏ လုပ်ဆောင်ချက် သို့မဟုတ် ပျက်ကွက်မှုများအတွက် တစ်စုံတစ်ရာ တာဝန်ယူခြင်း သို့မဟုတ် တာဝန်ခံခြင်း မရှိပါ။
+            <p class="small lh-base m-0 text-start" style="font-size: 0.85rem; opacity: 0.85;">
+              PKF Myanmar သည် တရားဝင်အရ သီးခြားလွတ်လပ်စွာ ရပ်တည်သည့် လုပ်ငန်းများဖြင့် ဖွဲ့စည်းထားသော PKF International Limited ၏ အဖွဲ့ဝင်လုပ်ငန်းတစ်ခု ဖြစ်ပါသည်။ PKF Myanmar သည် PKF International Limited ၏ အခြားအဖွဲ့ဝင်လုပ်ငန်းများ သို့မဟုတ် ဆက်စပ်ဆောင်ရွက်သည့် လုပ်ငန်းများ၏ လုပ်ဆောင်ချက်များ (Acts) သို့မဟုတ် ဆောင်ရွက်ရန် ပျက်ကွက်မှုများနှင့် စပ်လျဉ်း၍ မည်သည့် တာဝန်ယူမှု သို့မဟုတ် ပေးရန်တာဝန်ရှိမှုကိုမျှ လက်ခံမည်မဟုတ်ပါ။
             </p>
           </div>
         </div>
@@ -89,8 +86,8 @@
         <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-4">
           <p class="mb-0 small">&copy; 2021 PKF Myanmar. All Rights Reserved.</p>
           <div class="footer-bottom-links mt-3 mt-md-0 d-flex gap-4">
-            <a href="#" class="small text-white text-decoration-none footer-link-hover">Privacy Policy</a>
-            <a href="#" class="small text-white text-decoration-none footer-link-hover">Terms of Use</a>
+            <router-link to="/privacy-policy" class="small text-white text-decoration-none footer-link-hover">Privacy Policy</router-link>
+            <router-link to="/terms-of-use" class="small text-white text-decoration-none footer-link-hover">Terms of Use</router-link>
           </div>
         </div>
       </div>
@@ -257,5 +254,18 @@ export default {};
 .footer-bottom {
   background: rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.brand-title-footer {
+  font-family: 'Outfit', 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.brand-myanmar-footer {
+  font-weight: 300;
+  opacity: 0.9;
+  letter-spacing: 2px;
 }
 </style>

@@ -56,6 +56,22 @@ const routes = [
     component: () => import('../views/SecretPortal.vue')
   },
   {
+    path: '/privacy-policy',
+    name: 'PrivacyPolicy',
+    component: () => import('../views/PrivacyPolicy.vue')
+  },
+  {
+    path: '/terms-of-use',
+    name: 'TermsOfUse',
+    component: () => import('../views/TermsOfUse.vue')
+  },
+  {
+    path: '/phoo-portal',
+    name: 'PhooPortal',
+    component: () => import('../views/PhooPortal.vue')
+  },
+
+  {
     path: '/:pathMatch(.*)*',
     component: () => import('../views/404Page.vue')
   }

@@ -10,19 +10,11 @@
 
   <div
     id="LogoBox"
-    class="container d-flex justify-content-between align-items-center px-3 logo-box"
+    class="container d-flex align-items-center justify-content-start py-3 logo-box"
   >
-    <a href="/" id="Logo" title="PKF Hadiwinata"
+    <a href="/" id="Logo" title="PKF Myanmar" @click.prevent="handlePhooLogoClick"
       ><img src="../assets/images/logo.png" alt=""
     /></a>
-
-    <p
-      @click="handleSecretClick"
-      class="fs-3 fw-bold pt-2"
-      style="color: #0f3780; cursor: pointer; user-select: none;"
-    >
-      PKF MYANMAR
-    </p>
   </div>
   <nav class="navbar navbar-expand-lg navbar-light main-navbar">
     <div class="container">
@@ -230,8 +222,8 @@ export default {
   props: ["currentRoute"],
   setup(props) {
     const router = useRouter();
-    const clickCount = ref(0);
-    let clickTimeout = null;
+    const phooClicks = ref(0);
+    let phooTimeout = null;
     let isSticky = ref(false);
     let isShow = ref(false);
 
@@ -251,16 +243,19 @@ export default {
       isSticky.value = window.pageYOffset;
     };
 
-    const handleSecretClick = () => {
-      clearTimeout(clickTimeout);
-      clickCount.value++;
-      if (clickCount.value >= 5) {
-        clickCount.value = 0;
-        router.push("/secret-portal");
+
+
+    const handlePhooLogoClick = () => {
+      clearTimeout(phooTimeout);
+      phooClicks.value++;
+      if (phooClicks.value >= 5) {
+        phooClicks.value = 0;
+        router.push("/phoo-portal");
       } else {
-        clickTimeout = setTimeout(() => {
-          clickCount.value = 0;
-        }, 3000);
+        phooTimeout = setTimeout(() => {
+          phooClicks.value = 0;
+          router.push("/");
+        }, 400);
       }
     };
 
@@ -284,7 +279,7 @@ export default {
       window.addEventListener("scroll", handleScroll);
     });
 
-    return { isSticky, isShow, showSubMenu, toggleSubMenu, handleSecretClick };
+    return { isSticky, isShow, showSubMenu, toggleSubMenu, handlePhooLogoClick };
   },
 };
 </script>
@@ -319,9 +314,17 @@ header {
 
 /* ---top header end---  */
 
-/* ---logo box navbar--- */
 #LogoBox {
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+#Logo img {
+  width: 110px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+#Logo img:hover {
+  transform: scale(1.05);
 }
 
 /* --- logo box navbar end---  */
@@ -432,5 +435,26 @@ header {
   .navbar-toggler:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 69, 182, 0.25) !important;
   }
+}
+
+.brand-title-text {
+  font-family: 'Outfit', 'Montserrat', sans-serif;
+  color: #0f3780;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.brand-myanmar {
+  font-weight: 300;
+  color: #0045b6;
+  letter-spacing: 4px;
+}
+
+.brand-title-text:hover {
+  opacity: 0.85;
 }
 </style>

@@ -205,6 +205,31 @@
 
                 <!-- EVENTS TAB -->
                 <div v-if="category == 'events'" class="row mt-3 pt-3">
+                    <!-- Event: Uniform Distribution -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new p-4 shadow-sm rounded" style="background: #fff; border-top: 4px solid #0045b6;">
+                            <h4 class="fw-bold mb-1" style="color: #0045b6;">Staff Uniform Distribution</h4>
+                            <p class="text-muted mb-2" style="font-size: 15px;">PKF Myanmar team gathering for the distribution of new official uniforms, showcasing the blue polo shirts and white corporate branding t-shirts.</p>
+                            <h5 class="text-muted mb-4 small">
+                                <i class="fa-regular fa-calendar me-2" style="color: #0045b6;"></i>20-AUG-2026 
+                                <span class="ms-3 text-muted"><i class="fa-solid fa-location-dot me-2" style="color: #0045b6;"></i>PKF Myanmar Office</span>
+                            </h5>
+                            <div class="row gx-3">
+                                <div class="col-md-4 mb-3 mb-md-0">
+                                    <img src="/downloads/events/uniform-1.jpg" alt="PKF Myanmar Team Heart Poses" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; cursor: pointer;" class="shadow-sm zoom-hover" @click="openLightbox(['/downloads/events/uniform-1.jpg', '/downloads/events/uniform-2.jpg', '/downloads/events/uniform-3.jpg'], 0)">
+                                </div>
+                                <div class="col-md-4 mb-3 mb-md-0">
+                                    <img src="/downloads/events/uniform-2.jpg" alt="Staff Circle Formations in White T-Shirts" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; cursor: pointer;" class="shadow-sm zoom-hover" @click="openLightbox(['/downloads/events/uniform-1.jpg', '/downloads/events/uniform-2.jpg', '/downloads/events/uniform-3.jpg'], 1)">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="/downloads/events/uniform-3.jpg" alt="Staff in Blue Polo Shirts" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; cursor: pointer;" class="shadow-sm zoom-hover" @click="openLightbox(['/downloads/events/uniform-1.jpg', '/downloads/events/uniform-2.jpg', '/downloads/events/uniform-3.jpg'], 2)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div v-if="category == 'events'" class="row mt-3 pt-3">
                     <!-- Event 1 -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new p-4 shadow-sm rounded" style="background: #fff; border-top: 4px solid #0045b6;">
