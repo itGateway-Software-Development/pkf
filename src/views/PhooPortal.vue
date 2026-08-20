@@ -178,7 +178,7 @@
                                     </tr>
                                     <!-- Total row -->
                                     <tr class="table-info fw-bold">
-                                      <td class="text-dark">{{ getCategoryGrandTotal(categoryRows) }}</td>
+                                      <td class="text-dark">Total</td>
                                       <td v-for="col in headers" :key="col">
                                         {{ getColumnTotal(categoryRows, col) }}
                                       </td>
@@ -510,10 +510,12 @@ export default {
 
       XLSX.writeFile(workbook, `Sorted_Ledger_Report.xlsx`)
     }
-    const nonSummableColumns = ['date', 'account', 'person', 'description', 'ex rate', 'exrate', 'ex-rate', 'rate', 'id', 'sr', 'no', 's.no'];
     const shouldSumColumn = (col) => {
       const c = String(col).toLowerCase().trim();
-      return !nonSummableColumns.some(ex => c.includes(ex) || ex.includes(c));
+      if (c === 'date' || c === 'account' || c === 'person' || c === 'description' || c === 'ex rate' || c === 'exrate' || c === 'ex-rate' || c === 'rate' || c === 'excel row') {
+        return false;
+      }
+      return true;
     };
 
     const getColumnTotal = (categoryRows, col) => {
@@ -536,32 +538,8 @@ export default {
       return total.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 });
     };
 
-    const getCategoryGrandTotal = (categoryRows) => {
-      let grandTotal = 0;
-      let hasAmounts = false;
-      
-      const sumCols = headers.value.filter(col => shouldSumColumn(col));
-      
-      for (const row of categoryRows) {
-        for (const col of sumCols) {
-          const val = row[col];
-          if (val !== undefined && val !== null && val !== '') {
-            const parsed = parseFloat(String(val).replace(/,/g, ''));
-            if (!isNaN(parsed)) {
-              hasAmounts = true;
-              grandTotal += parsed;
-            }
-          }
-        }
-      }
-      
-      if (!hasAmounts) return 'Total';
-      return `Total (${grandTotal.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })})`;
-    };
-
     return {
       getColumnTotal,
-      getCategoryGrandTotal,
       isLoggedIn,
       username,
       password,
