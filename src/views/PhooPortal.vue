@@ -178,7 +178,7 @@
                                     </tr>
                                     <!-- Total row -->
                                     <tr class="table-info fw-bold">
-                                      <td class="text-dark">Total</td>
+                                      <td class="text-dark">{{ getCategoryGrandTotal(categoryRows) }}</td>
                                       <td v-for="col in headers" :key="col">
                                         {{ getColumnTotal(categoryRows, col) }}
                                       </td>
@@ -536,8 +536,32 @@ export default {
       return total.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 });
     };
 
+    const getCategoryGrandTotal = (categoryRows) => {
+      let grandTotal = 0;
+      let hasAmounts = false;
+      
+      const sumCols = headers.value.filter(col => shouldSumColumn(col));
+      
+      for (const row of categoryRows) {
+        for (const col of sumCols) {
+          const val = row[col];
+          if (val !== undefined && val !== null && val !== '') {
+            const parsed = parseFloat(String(val).replace(/,/g, ''));
+            if (!isNaN(parsed)) {
+              hasAmounts = true;
+              grandTotal += parsed;
+            }
+          }
+        }
+      }
+      
+      if (!hasAmounts) return 'Total';
+      return `Total (${grandTotal.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })})`;
+    };
+
     return {
       getColumnTotal,
+      getCategoryGrandTotal,
       isLoggedIn,
       username,
       password,
