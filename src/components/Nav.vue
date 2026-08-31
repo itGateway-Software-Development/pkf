@@ -293,6 +293,10 @@ export default {
   top: 0;
   z-index: 999;
   background: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
 }
 img {
   width: 80px;
@@ -301,25 +305,30 @@ img {
 /* ---top header---  */
 header {
   background: #0f3780;
+  padding: 7px 0;
 }
 .social-media {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.8rem;
   align-items: center;
 }
 .social-media i {
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
+  transition: transform 0.2s ease;
+}
+.social-media i:hover {
+  transform: scale(1.1);
 }
 
 /* ---top header end---  */
 
 #LogoBox {
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 #Logo img {
-  width: 110px;
+  width: 135px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -336,8 +345,15 @@ header {
 }
 
 .navbar-brand i {
-  font-size: 22px;
+  font-size: 26px;
+  color: #0045b6;
 }
+
+.navbar-brand img {
+  width: 100px;
+  height: auto;
+}
+
 .row .col-lg-8 a h5 {
   font-size: 16px;
   text-align: left !important;
@@ -353,12 +369,15 @@ header {
 
 .nav-link {
   color: #0045b6 !important;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
-  padding: 8px 16px !important;
+  padding: 10px 20px !important;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease;
 }
-.navbar-brand i {
-  color: #0045b6;
+
+.nav-link:hover {
+  color: #002d7a !important;
 }
 
 .dropdown {
@@ -372,6 +391,7 @@ header {
   transition: 0.5s;
   background-color: #e7e8ea;
   display: flex;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .service-menu:hover > .dropdown {
@@ -381,19 +401,21 @@ header {
   visibility: visible;
 }
 .service-menu .dropdown img {
-  width: 50px !important;
+  width: 58px !important;
 }
 
 .dropdown h5 {
-  font-size: 14px !important;
+  font-size: 15.5px !important;
+  font-weight: 600;
 }
 
 .active-menu {
   background: #0045b6;
   color: #fff !important;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
-  border-radius: 4px;
+  border-radius: 6px;
+  padding: 10px 20px !important;
 }
 .active-sub-menu {
   color: #0045b6;
@@ -402,6 +424,10 @@ header {
 /* --- main navbar end---  */
 
 @media (max-width: 990px) {
+  .main-navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .logo-box {
     display: none !important;
   }
@@ -423,17 +449,21 @@ header {
     margin: 10px 0 0 !important;
   }
   .navbar-toggler {
-    padding: 6px 10px;
-    border: 1.5px solid #0045b6 !important;
+    padding: 8px 12px;
+    border: 2px solid #0045b6 !important;
     background-color: transparent;
     transition: all 0.3s ease;
   }
   .navbar-toggler i {
     color: #0045b6 !important;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
   }
   .navbar-toggler:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 69, 182, 0.25) !important;
+  }
+  .nav-link {
+    font-size: 14.5px;
+    padding: 10px 14px !important;
   }
 }
 

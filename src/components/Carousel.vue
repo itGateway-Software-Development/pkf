@@ -2,7 +2,7 @@
   <div class="container-fluid px-0 home-banner-container pb-5">
     <div class="home-banner-wrap" @click="handleBannerClick" style="cursor: pointer;">
       <img
-        src="../assets/images/home-banner.jpg"
+        src="../assets/images/home-banner.png"
         class="d-block w-100 home-banner-img"
         alt="PKF Myanmar Banner"
       />
@@ -46,16 +46,16 @@ export default {
 }
 .home-banner-wrap {
   width: 100%;
-  max-height: 450px;
   overflow: hidden;
   border-radius: 0;
   box-shadow: none;
 }
 .home-banner-img {
   width: 100%;
-  height: 450px;
+  height: auto;
+  max-height: 480px;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   display: block;
 }
 
@@ -64,7 +64,8 @@ export default {
     max-height: 250px;
   }
   .home-banner-img {
-    height: 250px;
+    height: auto;
   }
 }
 </style>
+

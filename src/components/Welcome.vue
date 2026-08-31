@@ -72,17 +72,21 @@ export default {
 </script>
 
 <style scoped>
+.welcome h3 {
+  color: #0045b6;
+  font-size: 30px;
+}
 .welcome p {
   text-align: justify;
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 36px;
 }
 .about-us {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
   background: linear-gradient(135deg, #0045b6 0%, #002d7a 100%);
-  padding: 7px 20px;
+  padding: 9px 24px;
   border-radius: 6px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 69, 182, 0.3);
@@ -98,12 +102,12 @@ export default {
   color: #fff;
   font-family: 'Aptos', sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 .about-us i {
-  font-size: 11px;
+  font-size: 13px;
   color: #fff;
   transition: transform 0.3s ease;
 }
@@ -116,17 +120,17 @@ export default {
   margin-top: 40px;
 }
 .services-label {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
   color: #0045b6;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   line-height: 1;
 }
 .services-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
+  gap: 14px;
 }
 
 /* ── Card ── */
@@ -139,8 +143,8 @@ export default {
   background: #f4f7fd;
   border: 1.5px solid #dce6f7;
   border-radius: 14px;
-  padding: 20px 10px 14px;
-  gap: 10px;
+  padding: 22px 12px 16px;
+  gap: 12px;
   position: relative;
   transition: all 0.28s ease;
   cursor: pointer;
@@ -152,8 +156,8 @@ export default {
   box-shadow: 0 8px 24px rgba(0, 69, 182, 0.22);
 }
 .card-icon-wrap {
-  width: 58px;
-  height: 58px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,12 +171,12 @@ export default {
   background: #fff;
 }
 .card-icon-wrap img {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   object-fit: contain;
 }
 .card-title {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: #1a3a6e;
   line-height: 1.35;
@@ -182,7 +186,7 @@ export default {
   color: #fff;
 }
 .card-arrow {
-  font-size: 11px;
+  font-size: 13px;
   color: #0045b6;
   opacity: 0;
   transform: translateX(-4px);
@@ -198,14 +202,15 @@ export default {
 @media (max-width: 990px) {
   .welcome h3 {
     color: #0045b6;
-    font-size: 18px;
+    font-size: 22px;
   }
   .welcome p {
-    font-size: 15px;
+    font-size: 16.5px;
+    line-height: 32px;
   }
   .about-us a {
-    font-size: 12px;
-    padding-top: 5px;
+    font-size: 14px;
+    padding-top: 2px;
   }
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -219,7 +224,14 @@ export default {
   }
   .welcome h3 {
     color: #0045b6;
-    font-size: 16px;
+    font-size: 19px;
+  }
+  .welcome p {
+    font-size: 15.5px;
+    line-height: 28px;
+  }
+  .about-us a {
+    font-size: 13px;
   }
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -231,15 +243,15 @@ export default {
     margin: 0 auto;
   }
   .card-icon-wrap {
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
   }
   .card-icon-wrap img {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
   }
   .card-title {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 </style>

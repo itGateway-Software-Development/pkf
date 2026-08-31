@@ -80,13 +80,27 @@
                             <!-- File Upload Disclaimer -->
                             <div class="alert alert-info p-3 mb-4 d-flex align-items-start border-0 shadow-sm" style="background-color: #f0f7ff; border-left: 4px solid #0045b6 !important; border-radius: 8px;">
                                 <i class="fa-solid fa-video text-primary me-3 mt-1 fs-5"></i>
-                                <div class="text-dark" style="font-size: 13px; line-height: 1.5;">
-                                    <strong>File Submission Guide:</strong> Since our form does not accept direct image or file uploads, please upload your CV and certificates to Google Drive (or other cloud storage) and share the links below.
-                                    <div class="mt-2">
-                                        <a href="https://www.youtube.com/watch?v=GUYpinDoqFw" target="_blank" rel="noopener" class="fw-bold text-decoration-underline" style="color: #0045b6;">
-                                            Watch Video Tutorial <i class="fa-solid fa-up-right-from-square ms-1" style="font-size: 10px;"></i>
-                                        </a>
-                                        on how to upload and get a shareable Google Drive link.
+                                <div class="text-dark" style="font-size: 13px; line-height: 1.6;">
+                                    <div>
+                                        <strong>File Submission Guide:</strong> Since our form does not accept direct image or file uploads, please upload your CV and certificates to Google Drive (or other cloud storage) and share the links below.
+                                        <div class="mt-1">
+                                            <a href="https://www.youtube.com/watch?v=GUYpinDoqFw" target="_blank" rel="noopener" class="fw-bold text-decoration-underline" style="color: #0045b6;">
+                                                Watch Video Tutorial <i class="fa-solid fa-up-right-from-square ms-1" style="font-size: 10px;"></i>
+                                            </a>
+                                            on how to upload and get a shareable Google Drive link.
+                                        </div>
+                                    </div>
+
+                                    <hr class="my-2" style="border-top: 1px solid rgba(0, 69, 182, 0.15); opacity: 1;" />
+
+                                    <div>
+                                        <strong>File Submission Guide: </strong> ကျွန်ုပ်တို့၏ form တွင် file များကို တိုက်ရိုက် Upload ပြုလုပ်၍ မရပါသဖြင့် မိမိ၏ CV Form နှင့် ပညာအရည်အချင်း ထောက်ခံစာများကို Google Drive (သို့မဟုတ် အခြား Cloud Storage) သို့ တင်ပြီး ရရှိလာသော Link များကို အောက်ပါနေရာတွင် ထည့်သွင်းပေးပို့ပေးပါရန်။
+                                        <div class="mt-1">
+                                            Google Drive သို့ File တင်နည်းနှင့် Shareable Link ရယူနည်းကို
+                                            <a href="https://www.youtube.com/watch?v=GUYpinDoqFw" target="_blank" rel="noopener" class="fw-bold text-decoration-underline" style="color: #0045b6;">
+                                                ဗီဒီယို လမ်းညွှန်တွင် ကြည့်ရှုပါ <i class="fa-solid fa-up-right-from-square ms-1" style="font-size: 10px;"></i>
+                                            </a>။
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +125,7 @@
                                     <input type="url" v-model="form.certLink" class="form-control border-start-0" placeholder="e.g. Google Drive, OneDrive, or Dropbox link" required />
                                 </div>
                                 <small class="form-text text-muted mt-1 d-block">
-                                    <i class="fa-solid fa-circle-info me-1"></i> Paste a shareable cloud link to your graduation/degrees or certificates.
+                                    <i class="fa-solid fa-circle-info me-1"></i> Please make sure the link sharing setting is set to <strong>"Anyone with the link can view"</strong>.
                                 </small>
                             </div>
 
