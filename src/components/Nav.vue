@@ -8,27 +8,21 @@
     </div>
   </header>
 
-  <div
-    id="LogoBox"
-    class="container d-flex align-items-center justify-content-start py-3 logo-box"
-  >
-    <a href="/" id="Logo" title="PKF Myanmar" @click.prevent="handlePhooLogoClick"
-      ><img src="../assets/images/logo.png" alt=""
-    /></a>
-  </div>
   <nav class="navbar navbar-expand-lg navbar-light main-navbar">
     <div class="container">
-      <router-link class="navbar-brand" to="/">
-        <i
-          class="fa-solid fa-house-chimney"
-          :class="{ 'd-none': isSticky > 105, 'd-block': !isSticky > 105 }"
-        ></i>
+      <a
+        href="/"
+        class="navbar-brand py-0 d-flex align-items-center"
+        id="Logo"
+        title="PKF Myanmar"
+        @click.prevent="handlePhooLogoClick"
+      >
         <img
           src="../assets/images/logo.png"
-          :class="{ 'd-none': isSticky < 115, 'd-bock': isSticky > 105 }"
-          alt=""
+          alt="PKF Myanmar"
+          class="nav-logo"
         />
-      </router-link>
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -40,8 +34,8 @@
       >
         <i class="fa-solid fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item">
             <router-link
               to="/about-us"
@@ -323,35 +317,19 @@ header {
 
 /* ---top header end---  */
 
-#LogoBox {
-  padding-top: 20px;
-  padding-bottom: 16px;
-}
-#Logo img {
-  width: 135px;
+.nav-logo {
+  width: 140px;
   height: auto;
   transition: transform 0.3s ease;
 }
-#Logo img:hover {
-  transform: scale(1.05);
+
+.nav-logo:hover {
+  transform: scale(1.04);
 }
 
-/* --- logo box navbar end---  */
-
-/* ---main navbar---  */
-.row img {
-  width: 80%;
-  height: auto;
-}
-
-.navbar-brand i {
-  font-size: 26px;
-  color: #0045b6;
-}
-
-.navbar-brand img {
-  width: 100px;
-  height: auto;
+.navbar-brand {
+  padding: 0;
+  margin-right: 1.5rem;
 }
 
 .row .col-lg-8 a h5 {
@@ -428,8 +406,8 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .logo-box {
-    display: none !important;
+  .nav-logo {
+    width: 110px;
   }
   .dropdown {
     position: static;
