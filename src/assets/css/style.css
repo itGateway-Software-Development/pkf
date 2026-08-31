@@ -1,5 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
+/* Aptos Webfonts */
+@font-face {
+  font-family: 'Aptos';
+  src: url('../fonts/aptos/Aptos-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aptos';
+  src: url('../fonts/aptos/Aptos.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aptos';
+  src: url('../fonts/aptos/Aptos-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aptos';
+  src: url('../fonts/aptos/Aptos-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aptos';
+  src: url('../fonts/aptos/Aptos-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aptos';
+  src: url('../fonts/aptos/Aptos-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aptos';
+  src: url('../fonts/aptos/Aptos-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body, #app, button, input, select, textarea {
+    font-family: 'Aptos', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +69,7 @@
     text-decoration: none;
     list-style: none;
     color: #000;
+    font-family: inherit;
 }
 
 section {
@@ -28,7 +90,7 @@ section {
     background: linear-gradient(135deg, #0045b6 0%, #002d7a 100%);
     border: none;
     font-size: 14px;
-    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Aptos', sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;

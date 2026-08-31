@@ -103,7 +103,7 @@ export default {
 <style scoped>
 .privacy-policy {
   background-color: #fff;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Aptos', sans-serif;
   color: #334155;
 }
 

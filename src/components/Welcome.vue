@@ -96,7 +96,7 @@ export default {
 .about-us a {
   text-decoration: none;
   color: #fff;
-  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Aptos', sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.5px;

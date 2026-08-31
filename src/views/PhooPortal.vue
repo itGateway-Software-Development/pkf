@@ -574,7 +574,7 @@ export default {
   color: #334155;
   min-height: 70vh;
   padding: 30px 0;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Aptos', sans-serif;
 }
 
 .tool-title {

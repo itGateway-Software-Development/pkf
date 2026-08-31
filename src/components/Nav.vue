@@ -438,7 +438,7 @@ header {
 }
 
 .brand-title-text {
-  font-family: 'Outfit', 'Montserrat', sans-serif;
+  font-family: 'Aptos', sans-serif;
   color: #0f3780;
   letter-spacing: 2px;
   text-transform: uppercase;

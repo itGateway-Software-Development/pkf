@@ -33,6 +33,57 @@
                         <button class="lang-btn" :class="{'active-lang': newsLanguage == 'en'}" @click="newsLanguage = 'en'">English</button>
                     </div>
 
+                    <!-- News Card 8 — MAC Directive (26 August 2026) -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mb-3">
+                                    <img src="../assets/images/newspaper.jpg" alt="MAC Directive SC/16432 & SC/16433">
+                                </div>
+                                <div class="col-lg-9 col-md-8">
+                                    <h5>26-AUGUST-2026</h5>
+                                    <h4 v-if="newsLanguage == 'my'">မြန်မာနိုင်ငံစာရင်းကောင်စီ၏ UNSCR Sanction List များ နှင့်စပ်လျဉ်း၍ အသိပေးညွှန်ကြားချက် (SC/16432 & SC/16433)</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Myanmar Accountancy Council Notice on UNSCR Sanction List Updates (SC/16432 & SC/16433)</h4>
+
+                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">မြန်မာနိုင်ငံစာရင်းကောင်စီသည် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ၏ ပိတ်ဆို့အရေးယူမှုဆိုင်ရာ ဆုံးဖြတ်ချက်အမှတ် SC/16432 နှင့် SC/16433 များနှင့်စပ်လျဉ်း၍ စာရင်းလုပ်ငန်းများအားလုံး သတ်မှတ်လုပ်ထုံးလုပ်နည်းများနှင့်အညီ အချိန်နှင့်တစ်ပြေးညီ လိုက်နာဆောင်ရွက်ရန်၊ မိမိတို့၏ Website/Webpage (သို့မဟုတ်) Facebook Page များတွင် လွှင့်တင်ဆောင်ရွက်ရန်နှင့် ဆောင်ရွက်ပြီးစီးမှု အခြေအနေကို ၂၀၂၆ ခုနှစ်၊ စက်တင်ဘာလ ၁၀ ရက်နေ့ နောက်ဆုံးထား၍ ကောင်စီရုံးသို့ ပြန်လည်ပေးပို့ရန် ၂၀၂၆ ခုနှစ်၊ ဩဂုတ်လ ၂၆ ရက်နေ့တွင် အကြောင်းကြားစာ ထုတ်ပြန်ခဲ့သည်။</p>
+                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On 26 August 2026, the Myanmar Accountancy Council issued an official notice instructing all accounting firms and businesses to comply with the UN Security Council Sanctions List updates (SC/16432 and SC/16433 under Resolution 1267). Entities are required to review the updates, publish the information on their official websites or Facebook pages, and submit proof of compliance to the Council by 10 September 2026.</p>
+
+                                    <div class="d-flex gap-3 flex-wrap mt-3">
+                                        <a href="/downloads/SC-16432-33.pdf" target="_blank" rel="noopener noreferrer" class="read-more">
+                                            <i class="fa-solid fa-up-right-from-square me-2"></i>View UN Press Release
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 7 — SC/16435 (18 August 2026) -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mb-3">
+                                    <img src="../assets/images/newspaper.jpg" alt="UN SC/16435 Sanctions List">
+                                </div>
+                                <div class="col-lg-9 col-md-8">
+                                    <h5>18-AUGUST-2026</h5>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်း ၂၁ ခု ပြင်ဆင်ချက် (SC/16435)</h4>
+                                    <h4 v-if="newsLanguage == 'en'">UN Security Council Amends 21 Entries on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16435)</h4>
+
+                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">၂၀၂၆ ခုနှစ် ဩဂုတ်လ ၁၈ ရက်တွင် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်များ ၁၂၆၇ (၁၉၉၉)၊ ၁၉၈၉ (၂၀၁၁) နှင့် ၂၂၅၃ (၂၀၁၅) တို့အရ ဖွဲ့စည်းသည့် ကော်မတီသည် ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့အရေးယူမှုစာရင်းရှိ လူပုဂ္ဂိုလ်နှင့် အဖွဲ့အစည်းဆိုင်ရာ အမည်စာရင်း ၂၁ ခု၏ အချက်အလက်များကို ပြင်ဆင်သတ်မှတ်ခဲ့သည်။ အဆိုပါ ပြင်ဆင်ချက်များအရ သက်ဆိုင်ရာ ပုဂ္ဂိုလ်နှင့် အဖွဲ့အစည်းများသည် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၂၇၃၄ (၂၀၂၄) အရ ချမှတ်ထားသော ပိုင်ဆိုင်မှုများ ထိန်းချုပ်ခြင်း၊ ခရီးသွားလာခွင့် ပိတ်ပင်ခြင်းနှင့် လက်နက်တားဆီးပိတ်ဆို့မှုဆိုင်ရာ အစီအမံများအောက်တွင် ဆက်လက်တည်ရှိမည်ဖြစ်သည်။</p>
+                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On 18 August 2026, the Security Council Committee established pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) enacted amendments to 21 entries on its ISIL (Da'esh) and Al-Qaida Sanctions List. The entries of affected individuals and entities remain subject to the assets freeze, travel ban, and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), adopted under Chapter VII of the UN Charter.</p>
+
+                                    <div class="d-flex gap-3 flex-wrap mt-3">
+                                        <a href="https://press.un.org/en/2026/sc16435.doc.htm" target="_blank" rel="noopener" class="read-more">
+                                            <i class="fa-solid fa-up-right-from-square me-2"></i>View UN Press Release
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- News Card 6 — SC/16407, 8 July 2026 -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new">
@@ -615,7 +666,7 @@ import { onMounted, watch, ref } from 'vue'
     .read-more {
         background: linear-gradient(135deg, #0045b6 0%, #002d7a 100%);
         border: none;
-        font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+        font-family: 'Aptos', sans-serif;
         font-weight: 600;
         letter-spacing: 0.5px;
         text-transform: uppercase;

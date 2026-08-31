@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .terms-of-use {
   background-color: #fff;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Aptos', sans-serif;
   color: #334155;
 }
 

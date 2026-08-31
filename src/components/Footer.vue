@@ -257,7 +257,7 @@ export default {};
 }
 
 .brand-title-footer {
-  font-family: 'Outfit', 'Montserrat', sans-serif;
+  font-family: 'Aptos', sans-serif;
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 800;
