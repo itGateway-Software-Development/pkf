@@ -1,8 +1,10 @@
 <template>
     <section class="events">
         <div class="page-banner">
-            <h2 v-if="category == 'news'" class="banner-title">NEWS</h2>
-            <h2 v-if="category == 'events'" class="banner-title">EVENTS</h2>
+          <transition name="fade-slide" mode="out-in">
+            <h2 v-if="category == 'news'" key="news" class="banner-title">NEWS</h2>
+            <h2 v-else-if="category == 'events'" key="events" class="banner-title">EVENTS</h2>
+          </transition>
         </div>
 
         <div class="row mt-5 events-header">
@@ -24,13 +26,40 @@
                     <a href="/contact-us" class="contact-btn">Contact Us</a>
                 </div>
 
-                <!-- NEWS TAB -->
-                <div v-if="category == 'news'" class="row mt-3 pt-3">
+                <!-- TAB CONTENT WITH TRANSITION -->
+                <transition name="fade-slide" mode="out-in">
+                  <!-- NEWS TAB -->
+                  <div v-if="category == 'news'" key="news" class="row mt-3 pt-3">
                     
                     <!-- Language Toggle -->
                     <div class="col-lg-12 mb-3 text-end">
                         <button class="lang-btn" :class="{'active-lang': newsLanguage == 'my'}" @click="newsLanguage = 'my'">မြန်မာ</button>
                         <button class="lang-btn" :class="{'active-lang': newsLanguage == 'en'}" @click="newsLanguage = 'en'">English</button>
+                    </div>
+
+                    <!-- News Card 9 — SC/16446 (04 September 2026) -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mb-3">
+                                    <img src="../assets/images/newspaper.jpg" alt="UN SC/16446 Sanctions List">
+                                </div>
+                                <div class="col-lg-9 col-md-8">
+                                    <h5>04-SEPTEMBER-2026</h5>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်း ၂ ခု ပြင်ဆင်ချက် (SC/16446)</h4>
+                                    <h4 v-if="newsLanguage == 'en'">UN Security Council Amends Two Entries on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16446)</h4>
+
+                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">၂၀၂၆ ခုနှစ် စက်တင်ဘာလ ၄ ရက်တွင် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်များ ၁၂၆၇ (၁၉၉၉)၊ ၁၉၈၉ (၂၀၁၁) နှင့် ၂၂၅၃ (၂၀၁၅) တို့အရ ဖွဲ့စည်းသည့် ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့အရေးယူမှုဆိုင်ရာ ကော်မတီသည် ပိတ်ဆို့အရေးယူမှုစာရင်းရှိ လူပုဂ္ဂိုလ် ၂ ဦး (Sanaullah Ghafari နှင့် Abubakar Swalleh) တို့၏ အချက်အလက်များကို ပြင်ဆင်သတ်မှတ်ခဲ့သည်။ အဆိုပါ ပြင်ဆင်ချက်များအရ သက်ဆိုင်ရာ ပုဂ္ဂိုလ်များသည် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၂၇၃၄ (၂၀၂၄) အရ ချမှတ်ထားသော ပိုင်ဆိုင်မှုများ ထိန်းချုပ်ခြင်း၊ ခရီးသွားလာခွင့် ပိတ်ပင်ခြင်းနှင့် လက်နက်တားဆီးပိတ်ဆို့မှုဆိုင်ရာ အစီအမံများအောက်တွင် ဆက်လက်တည်ရှိမည်ဖြစ်သည်။</p>
+                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On 4 September 2026, the Security Council Committee established pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da'esh), Al-Qaida and associated individuals, groups, undertakings and entities enacted amendments to two entries (Sanaullah Ghafari and Abubakar Swalleh) on its ISIL (Da'esh) and Al-Qaida Sanctions List. The entries of affected individuals remain subject to the assets freeze, travel ban, and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024).</p>
+
+                                    <div class="d-flex gap-3 flex-wrap mt-3">
+                                        <a href="https://press.un.org/en/2026/sc16446.doc.htm" target="_blank" rel="noopener" class="read-more">
+                                            <i class="fa-solid fa-up-right-from-square me-2"></i>View UN Press Release
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- News Card 8 — MAC Directive (26 August 2026) -->
@@ -255,7 +284,7 @@
                 </div>
 
                 <!-- EVENTS TAB -->
-                <div v-if="category == 'events'" class="row mt-3 pt-3">
+                <div v-else-if="category == 'events'" key="events" class="row mt-3 pt-3">
                     <!-- Event: Uniform Distribution -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new p-4 shadow-sm rounded" style="background: #fff; border-top: 4px solid #0045b6;">
@@ -278,9 +307,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div v-if="category == 'events'" class="row mt-3 pt-3">
                     <!-- Event 1 -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new p-4 shadow-sm rounded" style="background: #fff; border-top: 4px solid #0045b6;">
@@ -297,9 +324,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div v-if="category == 'events'" class="row mt-3 pt-3">
                     <!-- Event 2-->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new p-4 shadow-sm rounded" style="background: #fff; border-top: 4px solid #0045b6;">
@@ -321,9 +346,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div v-if="category == 'events'" class="row mt-3 pt-3">
                     <!-- Event 5-->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new p-4 shadow-sm rounded" style="background: #fff; border-top: 4px solid #0045b6;">
@@ -345,9 +368,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div v-if="category == 'events'" class="row mt-3 pt-3">
                     <!-- Event 4-->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new p-4 shadow-sm rounded" style="background: #fff; border-top: 4px solid #0045b6;">
@@ -369,9 +390,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div v-if="category == 'events'" class="row mt-3 pt-3">
                     <!-- Event 3-->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new p-4 shadow-sm rounded" style="background: #fff; border-top: 4px solid #0045b6;">
@@ -392,8 +411,7 @@
                         </div>
                     </div>
                 </div>
-
-                
+                </transition>
 
             </div>
         </div>
@@ -415,7 +433,7 @@ import { onMounted, watch, ref } from 'vue'
     export default {
         setup() {
             let category = ref('news')
-            let newsLanguage = ref('my')
+            let newsLanguage = ref('en')
             
             let isLightboxOpen = ref(false)
             let currentImageIndex = ref(0)

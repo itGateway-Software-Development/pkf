@@ -1,6 +1,10 @@
 <template>
   <Nav :currentRoute="currentRoute" />
-  <router-view/>
+  <router-view v-slot="{ Component }">
+    <transition name="page" mode="out-in">
+      <component :is="Component" :key="$route.name" />
+    </transition>
+  </router-view>
   <Footer />
 </template>
 
@@ -44,4 +48,19 @@ a {
   text-decoration: none;
 }
 
+/* Page Transition Animations */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.35s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-15px);
+}
 </style>

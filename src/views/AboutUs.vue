@@ -1,8 +1,10 @@
 <template>
   <div class="about">
     <div class="page-banner">
-      <h2 v-if="category == 'pkf'" class="banner-title">ABOUT PKF MYANMAR</h2>
-      <h2 v-if="category == 'thida'" class="banner-title">ABOUT THIDA & PARTNERS</h2>
+      <transition name="fade-slide" mode="out-in">
+        <h2 v-if="category == 'pkf'" key="pkf" class="banner-title">ABOUT PKF MYANMAR</h2>
+        <h2 v-else-if="category == 'thida'" key="thida" class="banner-title">ABOUT THIDA & PARTNERS</h2>
+      </transition>
     </div>
 
     <div class="row mt-5 about-body">
@@ -23,13 +25,15 @@
         </div>
       </div>
       <div class="col-lg-9 col-md-9">
-    <a href="/contact-us" class="float-end contact-btn me-4">Contact Us</a>
-        <div v-if="category == 'pkf'">
-          <PKF @about="category = 'about-us'"></PKF>
-        </div>
-        <div v-if="category == 'thida'">
-          <ThidaPartner @about="category = 'about-us'"></ThidaPartner>
-        </div>
+        <a href="/contact-us" class="float-end contact-btn me-4">Contact Us</a>
+        <transition name="fade-slide" mode="out-in">
+          <div v-if="category == 'pkf'" key="pkf">
+            <PKF @about="category = 'about-us'"></PKF>
+          </div>
+          <div v-else-if="category == 'thida'" key="thida">
+            <ThidaPartner @about="category = 'about-us'"></ThidaPartner>
+          </div>
+        </transition>
       </div>
     </div>
   </div>

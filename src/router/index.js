@@ -61,6 +61,11 @@ const routes = [
     component: () => import('../views/PrivacyPolicy.vue')
   },
   {
+    path: '/publications',
+    name: 'Publications',
+    component: () => import('../views/Publications.vue')
+  },
+  {
     path: '/terms-of-use',
     name: 'TermsOfUse',
     component: () => import('../views/TermsOfUse.vue')
@@ -80,7 +85,14 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0, left: 0 };
+    }
+  }
 })
 
 export default router

@@ -100,7 +100,7 @@ export default {
         name: 'Thida Cho Win',
         position: 'Managing Partner',
         email: 'thidachowin@pkf.com.mm',
-        phone: '09-5150902',
+        phone: '+9595150902',
         linkedin: 'www.linkedin.com/in/thida-cho-win-6a68403b/',
         photo: '/downloads/people/thida.png',
         bio: [
@@ -114,7 +114,7 @@ export default {
         name: 'Myint Myint San',
         position: 'Engagement Partner',
         email: 'myintmyitsan@pkf.com.mm',
-        phone: '09-450022623',
+        phone: '+959450022623',
         linkedin: 'www.linkedin.com/in/myint-myint-san',
         photo: '/downloads/people/myint.png',
         bio: [
@@ -127,7 +127,7 @@ export default {
         name: 'Chaw Nandar Aung',
         position: 'Director',
         email: 'chawnandaraung@pkf.com.mm',
-        phone: '09-964884324',
+        phone: '+959964884324',
         linkedin: 'www.linkedin.com/in/chaw-nandar-aung-93867a191',
         photo: '/downloads/people/chaw.jpg',
         bio: [
@@ -141,7 +141,7 @@ export default {
         name: 'Nway Nandar Aung',
         position: 'Audit Manager',
         email: 'nwaynandaraung@pkf.com.mm',
-        phone: '09-421086629',
+        phone: '+959421086629',
         linkedin: null,
         photo: '/downloads/people/nway.jpg',
         bio: [
@@ -155,7 +155,7 @@ export default {
         name: 'Min Min Thaung',
         position: 'Audit Manager',
         email: 'minminthaung@pkf.com.mm',
-        phone: '09-979277230',
+        phone: '+959979277230',
         linkedin: null,
         photo: '/downloads/people/min.png',
         bio: [
@@ -169,7 +169,7 @@ export default {
         name: 'Tin Zar Lynn',
         position: 'Financial Controller',
         email: 'tinzarlynn@pkf.com.mm',
-        phone: '09-757628060',
+        phone: '+959757628060',
         linkedin: null,
         photo: '/downloads/people/tinzarlynn.png',
         bio: [

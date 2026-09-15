@@ -1,212 +1,155 @@
 <template>
-  <header>
-    <div class="container">
-      <div class="social-media">
-        <a href="https://www.linkedin.com/in/pkf-myanmar-a4a151298" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61552517021210" target="_blank" class="fb"><i class="fa-brands fa-square-facebook"></i></a>
+  <div class="sticky-top-container">
+    <header>
+      <div class="container">
+        <div class="top-header-bar d-flex justify-content-between align-items-center">
+          <router-link to="/" class="top-header-brand">PKF Myanmar</router-link>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/pkf-myanmar-a4a151298" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61552517021210" target="_blank" class="fb"><i class="fa-brands fa-square-facebook"></i></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <nav class="navbar navbar-expand-lg navbar-light main-navbar">
-    <div class="container">
-      <a
-        href="/"
-        class="navbar-brand py-0 d-flex align-items-center"
-        id="Logo"
-        title="PKF Myanmar"
-        @click.prevent="handlePhooLogoClick"
-      >
-        <img
-          src="../assets/images/logo.png"
-          alt="PKF Myanmar"
-          class="nav-logo"
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
-          <li class="nav-item">
-            <router-link
-              to="/about-us"
-              class="nav-link"
-              :class="{ 'active-menu': currentRoute == '/about-us' }"
-              >ABOUT US</router-link
-            >
-          </li>
+    <nav class="navbar navbar-expand-lg navbar-light main-navbar">
+      <div class="container">
+        <a
+          href="/"
+          class="navbar-brand py-0 d-flex align-items-center"
+          id="Logo"
+          title="PKF Myanmar"
+          @click.prevent="handlePhooLogoClick"
+        >
+          <img
+            src="../assets/images/logo.png"
+            alt="PKF Myanmar"
+            class="nav-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <router-link
+                to="/about-us"
+                class="nav-link"
+                :class="{ 'active-menu': currentRoute == '/about-us' }"
+                >ABOUT US</router-link
+              >
+            </li>
 
-          <li class="nav-item service-menu">
-            <router-link
-              to="/services/our-services"
-              @mouseenter="showSubMenu"
-              @click="toggleSubMenu"
-              class="nav-link services nav2-info-container"
-              :class="{
-                'active-menu': currentRoute.substring(0, 8) == '/service',
-              }"
-              >SERVICES
-              <i
-                class="ms-2 fa-solid fa-caret-down text-primary"
+            <li class="nav-item service-menu">
+              <router-link
+                to="/services/our-services"
+                @mouseenter="showSubMenu"
+                @click="toggleSubMenu"
+                class="nav-link services nav2-info-container"
                 :class="{
-                  'text-white': currentRoute.substring(0, 8) == '/service',
+                  'active-menu': currentRoute.substring(0, 8) == '/service',
                 }"
-              ></i
-            ></router-link>
-            <div class="dropdown" v-if="isShow">
-              <div class="container pt-3">
-                <div class="row w-100">
-                  <div class="col-md-12 col-lg-3 col-sm-12 mb-4">
-                    <div class="row">
-                      <div
-                        class="d-none d-lg-block col-md-2 col-lg-4 pl-0 pr-0"
-                      >
-                        <img
-                          src="../assets/images/assurance.png"
-                          alt=" Audit &amp; Assurance"
-                        />
-                      </div>
-                      <div
-                        class="col-sm-12 col-md-10 col-lg-8 pl-2 d-flex align-items-center"
-                      >
-                        <router-link to="/services/assurance"
-                          ><h5
-                            :class="{
-                              'active-sub-menu':
-                                currentRoute == '/services/assurance',
-                            }"
-                          >
-                            Audit &amp; Assurance
-                          </h5></router-link
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-lg-3 col-sm-12 mb-4">
-                    <div class="row">
-                      <div
-                        class="d-none d-lg-block col-md-2 col-lg-4 pl-0 pr-0"
-                      >
-                        <img
-                          src="../assets/images/advisory.png"
-                          alt=" Advisory"
-                        />
-                      </div>
-                      <div
-                        class="col-sm-12 col-md-10 col-lg-8 pl-2 d-flex align-items-center"
-                      >
-                        <router-link to="/services/advisory"><h5>Advisory</h5></router-link>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-lg-3 col-sm-12 mb-4">
-                    <div class="row">
-                      <div
-                        class="d-none d-lg-block col-md-2 col-lg-4 pl-0 pr-0"
-                      >
-                        <img src="../assets/images/tax-legal.png" alt="Tax" />
-                      </div>
-                      <div
-                        class="col-sm-12 col-md-10 col-lg-8 pl-2 d-flex align-items-center"
-                      >
-                        <router-link to="/services/tax"><h5>Tax</h5></router-link>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-lg-3 col-sm-12 mb-4">
-                    <div class="row">
-                      <div
-                        class="d-none d-lg-block col-md-2 col-lg-4 pl-0 pr-0"
-                      >
-                        <img
-                          src="../assets/images/business-solutions.png"
-                          alt="Business Solutions"
-                        />
-                      </div>
-                      <div
-                        class="col-sm-12 col-md-10 col-lg-8 pl-2 d-flex align-items-center"
-                      >
-                        <router-link to="/services/corporate"
-                          ><h5>Corporate Secretarial</h5></router-link
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-lg-3 col-sm-12 mb-4 mt-3">
-                    <div class="row">
-                      <div
-                        class="d-none d-lg-block col-md-2 col-lg-4 pl-0 pr-0"
-                      >
-                        <img
-                          src="../assets/images/finance.png"
-                          alt="Technology &amp; Risk Services"
-                        />
-                      </div>
-                      <div
-                        class="col-sm-12 col-md-10 col-lg-8 pl-2 d-flex align-items-center"
-                      >
-                        <router-link to="/services/account-financial"
-                          ><h5>Accounting & Financial Reporting</h5></router-link
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                >SERVICES
+                <i
+                  class="ms-2 fa-solid fa-caret-down text-primary"
+                  :class="{
+                    'text-white': currentRoute.substring(0, 8) == '/service',
+                  }"
+                ></i
+              ></router-link>
+              <div class="simple-dropdown" v-if="isShow">
+                <ul class="dropdown-list">
+                  <li>
+                    <router-link to="/services/assurance" :class="{ 'active-sub': currentRoute == '/services/assurance' }">
+                      Audit &amp; Assurance
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link to="/services/advisory" :class="{ 'active-sub': currentRoute == '/services/advisory' }">
+                      Advisory
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link to="/services/tax" :class="{ 'active-sub': currentRoute == '/services/tax' }">
+                      Tax
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link to="/services/corporate" :class="{ 'active-sub': currentRoute == '/services/corporate' }">
+                      Corporate Secretarial
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link to="/services/account-financial" :class="{ 'active-sub': currentRoute == '/services/account-financial' }">
+                      Accounting &amp; Financial Reporting
+                    </router-link>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="nav-item">
-            <router-link
-              to="/news-events"
-              class="nav-link"
-              :class="{
-                'active-menu': currentRoute.substring(0, 12) == '/news-events',
-              }"
-              >NEWS &amp; EVENTS</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link
-              to="/people"
-              class="nav-link"
-              :class="{
-                'active-menu': currentRoute.substring(0, 7) == '/people',
-              }"
-              >PEOPLE</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link
-              to="/careers/careers"
-              class="nav-link"
-              :class="{
-                'active-menu': currentRoute.substring(0, 8) == '/careers',
-              }"
-              >JOB OPPORTUNITIES</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link
-              to="/contact-us"
-              class="nav-link"
-              :class="{ 'active-menu': currentRoute == '/contact-us' }"
-              >CONTACT US</router-link
-            >
-          </li>
-        </ul>
+            <li class="nav-item">
+              <router-link
+                to="/news-events"
+                class="nav-link"
+                :class="{
+                  'active-menu': currentRoute.substring(0, 12) == '/news-events',
+                }"
+                >NEWS &amp; EVENTS</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link
+                to="/publications"
+                class="nav-link"
+                :class="{
+                  'active-menu': currentRoute.substring(0, 13) == '/publications',
+                }"
+                >PUBLICATIONS</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link
+                to="/people"
+                class="nav-link"
+                :class="{
+                  'active-menu': currentRoute.substring(0, 7) == '/people',
+                }"
+                >PEOPLE</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link
+                to="/careers/careers"
+                class="nav-link"
+                :class="{
+                  'active-menu': currentRoute.substring(0, 8) == '/careers',
+                }"
+                >JOB OPPORTUNITIES</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link
+                to="/contact-us"
+                class="nav-link"
+                :class="{ 'active-menu': currentRoute == '/contact-us' }"
+                >CONTACT US</router-link
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </template>
 
 <script>
@@ -282,10 +225,13 @@ export default {
 .container {
   padding: 0 15px;
 }
-.main-navbar {
+.sticky-top-container {
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
+}
+.main-navbar {
+  position: relative;
   background: #fff;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -300,6 +246,25 @@ img {
 header {
   background: #0f3780;
   padding: 7px 0;
+}
+.top-header-bar {
+  position: relative;
+}
+.top-header-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+.top-header-brand:hover {
+  color: #ffffff;
+  opacity: 0.85;
 }
 .social-media {
   display: flex;
@@ -347,7 +312,7 @@ header {
 
 .nav-link {
   color: #0045b6 !important;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   padding: 10px 20px !important;
   letter-spacing: 0.3px;
@@ -358,45 +323,72 @@ header {
   color: #002d7a !important;
 }
 
-.dropdown {
+.service-menu {
+  position: relative;
+}
+
+.simple-dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  min-width: 260px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   transform: translateY(10px);
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
-  background-color: #e7e8ea;
-  display: flex;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  padding: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.service-menu:hover > .dropdown {
-  transform: translate(0, 0);
-  pointer-events: auto;
+.service-menu:hover > .simple-dropdown {
+  transform: translateY(0);
   opacity: 1;
   visibility: visible;
 }
-.service-menu .dropdown img {
-  width: 58px !important;
+
+.dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.dropdown h5 {
-  font-size: 15.5px !important;
-  font-weight: 600;
+.dropdown-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-list a {
+  display: block;
+  padding: 10px 20px;
+  color: #1a3a6e;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-list a:hover {
+  background-color: #f4f7fd;
+  color: #0045b6;
+}
+
+.dropdown-list a.active-sub {
+  color: #0045b6;
+  font-weight: 700;
+  background-color: #f4f7fd;
 }
 
 .active-menu {
   background: #0045b6;
   color: #fff !important;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 6px;
   padding: 10px 20px !important;
-}
-.active-sub-menu {
-  color: #0045b6;
 }
 
 /* --- main navbar end---  */
@@ -409,22 +401,29 @@ header {
   .nav-logo {
     width: 110px;
   }
-  .dropdown {
+  .simple-dropdown {
     position: static;
     top: 100%;
     left: 0;
     width: 100%;
-    transform: translateY(10px);
+    transform: translateY(0);
     opacity: 1;
     visibility: visible;
     display: block;
     transition: 0.5s;
-    background-color: #e7e8ea;
+    background-color: #f4f7fd;
     margin-bottom: 10px;
-    padding: 0 0 10px;
+    padding: 5px 0;
+    box-shadow: none;
+    border: none;
   }
-  .col-md-12.col-lg-3.col-sm-12 {
-    margin: 10px 0 0 !important;
+  .dropdown-list a {
+    padding: 10px 15px;
+    font-size: 14px;
+    background: transparent;
+  }
+  .dropdown-list a:hover {
+    background: rgba(0, 69, 182, 0.05);
   }
   .navbar-toggler {
     padding: 8px 12px;
@@ -440,7 +439,7 @@ header {
     box-shadow: 0 0 0 0.2rem rgba(0, 69, 182, 0.25) !important;
   }
   .nav-link {
-    font-size: 14.5px;
+    font-size: 12.5px;
     padding: 10px 14px !important;
   }
 }

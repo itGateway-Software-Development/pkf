@@ -3,7 +3,7 @@
     <div class="container py-5 px-4 px-lg-5 text-white position-relative z-1">
       <div class="row gy-5">
         <!-- Brand & Social -->
-        <div class="col-lg-4 col-md-12 pe-lg-5">
+        <div class="col-lg-4 col-md-12 pe-lg-5" data-aos="fade-up">
           <div class="brand-section mb-4">
             <div class="logo-wrapper bg-white d-inline-block px-3 py-2 rounded mb-3 shadow-sm">
               <img src="../assets/images/logo.png" alt="PKF Myanmar Logo" class="footer-logo" />
@@ -24,7 +24,7 @@
         </div>
 
         <!-- Contact Information -->
-        <div class="col-lg-4 col-md-6 mt-5 mt-lg-4">
+        <div class="col-lg-4 col-md-6 mt-5 mt-lg-4" data-aos="fade-up" data-aos-delay="100">
           <h5 class="footer-heading mb-4">Contact Us</h5>
           <ul class="contact-list list-unstyled">
             <li class="d-flex mb-4">
@@ -57,7 +57,7 @@
         </div>
 
         <!-- Network Disclaimer -->
-        <div class="col-lg-4 col-md-6 mt-5 mt-lg-4">
+        <div class="col-lg-4 col-md-6 mt-5 mt-lg-4" data-aos="fade-up" data-aos-delay="200">
           <h5 class="footer-heading mb-4">Our Network</h5>
           <div class="disclaimer-box p-4 rounded shadow-sm">
             <p class="mb-3 d-flex align-items-start fw-bold">

@@ -1,36 +1,39 @@
 <template>
   <section class="about">
     <div class="page-banner">
-      <h2 v-if="service == 'assurance'" class="banner-title">AUDIT & ASSURANCE</h2>
-      <h2 v-if="service == 'our-services'" class="banner-title">OUR SERVICES</h2>
-      <h2 v-if="service == 'advisory'" class="banner-title">ADVISORY</h2>
-      <h2 v-if="service == 'tax'" class="banner-title">TAX</h2>
-
-      <h2 v-if="service == 'corporate'" class="banner-title">CORPORATE SECRETARIAL SERVICE</h2>
-      <h2 v-if="service == 'account-financial'" class="banner-title">ACCOUNTING & FINANCIAL REPORTING</h2>
+      <transition name="fade-slide" mode="out-in">
+        <h2 v-if="service == 'assurance'" key="assurance" class="banner-title">AUDIT & ASSURANCE</h2>
+        <h2 v-else-if="service == 'our-services'" key="our-services" class="banner-title">OUR SERVICES</h2>
+        <h2 v-else-if="service == 'advisory'" key="advisory" class="banner-title">ADVISORY</h2>
+        <h2 v-else-if="service == 'tax'" key="tax" class="banner-title">TAX</h2>
+        <h2 v-else-if="service == 'corporate'" key="corporate" class="banner-title">CORPORATE SECRETARIAL SERVICE</h2>
+        <h2 v-else key="account-financial" class="banner-title">ACCOUNTING & FINANCIAL REPORTING</h2>
+      </transition>
     </div>
 
     <div class="row mt-5 service-content">
       <ServicesCategory :service="service"></ServicesCategory>
       <div class="col-lg-9 col-md-8">
-        <div v-if="service == 'our-services'">
-          <OurServices></OurServices>
-        </div>
-        <div v-else-if="service == 'assurance'">
-          <Assurance></Assurance>
-        </div>
-        <div v-else-if="service == 'advisory'">
-          <Advisory></Advisory>
-        </div>
-        <div v-else-if="service == 'tax'">
-          <Tax></Tax>
-        </div>
-        <div v-else-if="service == 'corporate'">
-          <Corporate></Corporate>
-        </div>
-        <div v-else>
-          <AccountFinicial></AccountFinicial>
-        </div>
+        <transition name="fade-slide" mode="out-in">
+          <div v-if="service == 'our-services'" key="our-services">
+            <OurServices></OurServices>
+          </div>
+          <div v-else-if="service == 'assurance'" key="assurance">
+            <Assurance></Assurance>
+          </div>
+          <div v-else-if="service == 'advisory'" key="advisory">
+            <Advisory></Advisory>
+          </div>
+          <div v-else-if="service == 'tax'" key="tax">
+            <Tax></Tax>
+          </div>
+          <div v-else-if="service == 'corporate'" key="corporate">
+            <Corporate></Corporate>
+          </div>
+          <div v-else key="account-financial">
+            <AccountFinicial></AccountFinicial>
+          </div>
+        </transition>
       </div>
     </div>
   </section>

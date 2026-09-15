@@ -1,7 +1,7 @@
 <template>
     <div class="news-section container">
         <div class="row">
-            <div class="col-lg-5 col-md-12 h-100 p-3 mb-3 event-main">
+            <div class="col-lg-5 col-md-12 h-100 p-3 mb-3 event-main" data-aos="fade-right">
                 <div class="title p-3">
                     <span>23-05-2023</span>
                     <h2>Sosialisasi Program Pengungkapan Sukarela (PPS)</h2>
@@ -12,7 +12,7 @@
                     Read More <i class="fa-solid fa-chevron-right"></i>
                 </router-link>
             </div>
-            <div class="col-lg-7 col-md-12 p-3 px-md-5 news-bar">
+            <div class="col-lg-7 col-md-12 p-3 px-md-5 news-bar" data-aos="fade-left">
                 <div class="news-head p-3">
                     <h2 class="">LATEST NEWS</h2>
 
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="row latest-news">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                         <div class="news-card">
                             <h5>23-05-2023</h5>
                             <h4>PKF CAP honoured as employer of choice</h4>
@@ -29,7 +29,7 @@
                             <router-link to="/news-events/event1" class="read-more">Read More <i class="fa-solid fa-chevron-right"></i></router-link>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="news-card">
                             <h5>23-05-2023</h5>
                             <h4>PKF-CAP LLP featured in Good Company Report 2021/22</h4>

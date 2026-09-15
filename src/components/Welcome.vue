@@ -1,7 +1,7 @@
 <template>
   <div class="welcome container my-4">
-    <h3 class="mb-4 fw-bold" style="color: #0045b6;">WELCOME TO PKF MYANMAR</h3>
-    <p>
+    <h3 class="mb-4 fw-bold" style="color: #0045b6;" data-aos="fade-up">WELCOME TO PKF MYANMAR</h3>
+    <p data-aos="fade-up" data-aos-delay="100">
       We are partnered with a global network of PKF international. Our director
       and members have operated under the PKF brand since 2018 and have stood as
       a private accounting firm since 2013. Our company represents our
@@ -9,12 +9,12 @@
       each member to be an Independent ethical professional accountant, improve
       client satisfaction and confidence, and for us to grow together.
     </p>
-    <div class="about-us">
+    <div class="about-us" data-aos="fade-up" data-aos-delay="200">
       <router-link to="/about-us">About us <i class="fa-solid fa-chevron-right"></i> </router-link>
     </div>
 
     <div class="services-section">
-      <p class="services-label">OUR SERVICES</p>
+      <p class="services-label" data-aos="fade-up" data-aos-delay="300">OUR SERVICES</p>
       <div class="services-grid">
         
         <router-link 
@@ -22,6 +22,8 @@
           :key="index"
           :to="service.route" 
           class="service-card"
+          data-aos="zoom-in"
+          :data-aos-delay="400 + (index * 100)"
         >
           <div class="card-icon-wrap">
             <img :src="service.icon" :alt="service.title" />

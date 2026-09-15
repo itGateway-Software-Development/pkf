@@ -25,7 +25,7 @@
                 <div class="icon-wrap me-3"><i class="fa-solid fa-map-location-dot"></i></div>
                 <div>
                   <h6 class="fw-bold text-dark mb-1">Our Address</h6>
-                  <p class="text-muted small m-0">Room 802, Gonyi Residence, Bo Min Yaung Street, Mingalar Taung Nyunt Township, Yangon, Myanmar.</p>
+                  <p class="text-muted small m-0">#706-708, 7th Floor, Tower B, Gonyi Residence Corner of Upper Pansodan Rd and Myanma Gonyi St, Mingalar Taung Nyunt T/S, Yangon, Myanmar.</p>
                 </div>
               </div>
 
@@ -49,7 +49,7 @@
                 <div class="icon-wrap me-3"><i class="fa-solid fa-clock"></i></div>
                 <div>
                   <h6 class="fw-bold text-dark mb-1">Office Hours</h6>
-                  <p class="text-muted small m-0">Monday – Friday: 9:00 AM – 5:00 PM</p>
+                  <p class="text-muted small m-0">Monday – Friday: 8:30 AM – 5:30 PM</p>
                 </div>
               </div>
             </div>

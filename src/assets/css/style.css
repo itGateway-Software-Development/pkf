@@ -117,3 +117,49 @@ section {
         padding: 6px 16px;
     }
 }
+
+/* Global Micro-interactions */
+
+/* Smooth transitions for all links */
+a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Base card transition class */
+.hover-card {
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth image zoom effect container */
+.img-zoom-container {
+    overflow: hidden;
+}
+
+.img-zoom-container img {
+    transition: transform 0.6s ease;
+}
+
+.img-zoom-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Sub-category & Tab Content Transitions */
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+    transition: opacity 0.35s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.fade-slide-enter-from {
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.fade-slide-leave-to {
+    opacity: 0;
+    transform: translateY(-15px);
+}
