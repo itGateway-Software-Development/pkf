@@ -5,14 +5,7 @@
     </div>
 
     <div class="container py-3 py-md-4">
-      <!-- Breadcrumb Navigation -->
-      <nav aria-label="breadcrumb" class="mb-2">
-        <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><router-link to="/">Home</router-link></li>
-          <li class="breadcrumb-item"><router-link to="/publications">Publications</router-link></li>
-          <li class="breadcrumb-item active" aria-current="page">Doing Business in Myanmar</li>
-        </ol>
-      </nav>
+
 
       <!-- Main Content Grid -->
       <div class="row align-items-center g-4 mt-2">

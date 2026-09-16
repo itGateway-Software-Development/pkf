@@ -1,9 +1,6 @@
 <template>
   <div>
     <a href="/contact-us" class="float-end contact-btn">Contact Us</a>
-    <p class="show-link">
-      <router-link to="/">Home</router-link>&nbsp;/&nbsp; Services
-    </p>
     <div class="about-content">
       <h3>Our Services</h3>
       <p>

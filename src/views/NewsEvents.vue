@@ -18,11 +18,7 @@
             </div>
 
             <div class="col-lg-9 col-md-8">
-                <div class="breadcrumb-row">
-                    <p class="show-link mb-0">
-                        <router-link to="/">Home</router-link>&nbsp;/&nbsp;
-                        News & Events
-                    </p>
+                <div class="breadcrumb-row justify-content-end">
                     <a href="/contact-us" class="contact-btn">Contact Us</a>
                 </div>
 

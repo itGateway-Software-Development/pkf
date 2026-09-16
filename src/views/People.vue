@@ -6,12 +6,7 @@
       <h2 class="banner-title">OUR PEOPLE</h2>
     </div>
 
-    <!-- Breadcrumb -->
-    <div class="people-breadcrumb-wrap">
-      <p class="show-link mb-0">
-        <router-link to="/">Home</router-link>&nbsp;/&nbsp;Our People
-      </p>
-    </div>
+
 
     <!-- Intro -->
     <div class="people-intro">

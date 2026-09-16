@@ -1,10 +1,5 @@
 <template>
   <div>
-    <p class="show-link">
-      <router-link to="/">Home</router-link>&nbsp;/&nbsp;
-      <router-link to="/about-us" @click="about">About-us</router-link
-      >&nbsp;/&nbsp;Two
-    </p>
     <h4>Thida & Partners Ltd</h4>
     <p style="text-indent: 50px">
       Thida & Partners Ltd. provides audit, accounting, tax compliance and

@@ -11,12 +11,7 @@
                 
             </div>
             <div class="col-lg-9 col-md-8">
-                <a href="" class="float-end contact-btn me-4">Contact Us</a>
-                <p class="show-link">
-                    <router-link to="/">Home</router-link>&nbsp;/&nbsp;
-                    <router-link to="/">News & Events</router-link>&nbsp;/&nbsp;
-                    Event1
-                </p>
+                <a href="/contact-us" class="float-end contact-btn me-4">Contact Us</a>
 
                 <div class="row mt-3 pt-3 detail-content">
                     <h3>Sosialisasi Program Pengungkapan Sukarela (PPS)</h3>

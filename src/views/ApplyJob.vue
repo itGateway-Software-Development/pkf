@@ -5,12 +5,7 @@
         </div>
 
         <div class="container my-5 apply-container">
-            <!-- Breadcrumbs -->
-            <p class="show-link mb-4">
-                <router-link to="/">Home</router-link>&nbsp;/&nbsp;
-                <router-link to="/careers/careers">Job Opportunities</router-link>&nbsp;/&nbsp;
-                Apply
-            </p>
+
 
             <div class="row justify-content-center">
                 <div class="col-lg-8">

@@ -1,10 +1,5 @@
 <template>
   <div>
-    <p class="show-link">
-      <router-link to="/">Home</router-link>&nbsp;/&nbsp;
-      <router-link to="/about-us" @click="about">About-us</router-link
-      >&nbsp;/&nbsp;One
-    </p>
     <h4>PKF Myanmar</h4>
     <p style="text-indent: 50px">
       We are partnered with a global network of PKF international. Our director

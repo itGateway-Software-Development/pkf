@@ -1,11 +1,6 @@
 <template>
   <div>
     <a href="/contact-us" class="float-end contact-btn">Contact Us</a>
-    <p class="show-link">
-      <router-link to="/">Home</router-link>&nbsp;/&nbsp;
-      <router-link to="/services/our-services">Services</router-link
-      >&nbsp;/&nbsp; Audit & Assurance
-    </p>
     <div class="about-content">
       <h3>Audit & Assurance</h3>
       <p>
