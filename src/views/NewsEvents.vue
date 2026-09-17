@@ -33,7 +33,7 @@
                         <button class="lang-btn" :class="{'active-lang': newsLanguage == 'en'}" @click="newsLanguage = 'en'">English</button>
                     </div>
 
-                    <!-- News Card 9 — SC/16446 (04 September 2026) -->
+                    <!-- News Card 9 — SC/16446 (17 September 2026) -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new">
                             <div class="row">
@@ -41,12 +41,9 @@
                                     <img src="../assets/images/newspaper.jpg" alt="UN SC/16446 Sanctions List">
                                 </div>
                                 <div class="col-lg-9 col-md-8">
-                                    <h5>04-SEPTEMBER-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်း ၂ ခု ပြင်ဆင်ချက် (SC/16446)</h4>
-                                    <h4 v-if="newsLanguage == 'en'">UN Security Council Amends Two Entries on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16446)</h4>
-
-                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">၂၀၂၆ ခုနှစ် စက်တင်ဘာလ ၄ ရက်တွင် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်များ ၁၂၆၇ (၁၉၉၉)၊ ၁၉၈၉ (၂၀၁၁) နှင့် ၂၂၅၃ (၂၀၁၅) တို့အရ ဖွဲ့စည်းသည့် ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့အရေးယူမှုဆိုင်ရာ ကော်မတီသည် ပိတ်ဆို့အရေးယူမှုစာရင်းရှိ လူပုဂ္ဂိုလ် ၂ ဦး (Sanaullah Ghafari နှင့် Abubakar Swalleh) တို့၏ အချက်အလက်များကို ပြင်ဆင်သတ်မှတ်ခဲ့သည်။ အဆိုပါ ပြင်ဆင်ချက်များအရ သက်ဆိုင်ရာ ပုဂ္ဂိုလ်များသည် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၂၇၃၄ (၂၀၂၄) အရ ချမှတ်ထားသော ပိုင်ဆိုင်မှုများ ထိန်းချုပ်ခြင်း၊ ခရီးသွားလာခွင့် ပိတ်ပင်ခြင်းနှင့် လက်နက်တားဆီးပိတ်ဆို့မှုဆိုင်ရာ အစီအမံများအောက်တွင် ဆက်လက်တည်ရှိမည်ဖြစ်သည်။</p>
-                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On 4 September 2026, the Security Council Committee established pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da'esh), Al-Qaida and associated individuals, groups, undertakings and entities enacted amendments to two entries (Sanaullah Ghafari and Abubakar Swalleh) on its ISIL (Da'esh) and Al-Qaida Sanctions List. The entries of affected individuals remain subject to the assets freeze, travel ban, and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024).</p>
+                                    <h5>17-SEPTEMBER-2026</h5>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂလုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၁၂၆၇ နှင့်  ဆုံးဖြတ်ချက်အမှတ် ၁၇၁၈ ဖြင့် ၄-၉-၂၀၂၆ ရက်နေ့တွင် SC/16446  ဖြင့် ထုတ်ပြန်ထားသည့် UNSCR Sanction list update အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing UNSCR Sanction list update issued on 4-9-2026 under UN Security Council Resolutions 1267 and 1718 via SC/16446.</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="https://press.un.org/en/2026/sc16446.doc.htm" target="_blank" rel="noopener" class="read-more">
@@ -67,17 +64,13 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>26-AUGUST-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">မြန်မာနိုင်ငံစာရင်းကောင်စီ၏ UNSCR Sanction List များ နှင့်စပ်လျဉ်း၍ အသိပေးညွှန်ကြားချက် (SC/16432 & SC/16433)</h4>
-                                    <h4 v-if="newsLanguage == 'en'">Myanmar Accountancy Council Notice on UNSCR Sanction List Updates (SC/16432 & SC/16433)</h4>
-
-                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">မြန်မာနိုင်ငံစာရင်းကောင်စီသည် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ၏ ပိတ်ဆို့အရေးယူမှုဆိုင်ရာ ဆုံးဖြတ်ချက်အမှတ် SC/16432 နှင့် SC/16433 များနှင့်စပ်လျဉ်း၍ စာရင်းလုပ်ငန်းများအားလုံး သတ်မှတ်လုပ်ထုံးလုပ်နည်းများနှင့်အညီ အချိန်နှင့်တစ်ပြေးညီ လိုက်နာဆောင်ရွက်ရန်၊ မိမိတို့၏ Website/Webpage (သို့မဟုတ်) Facebook Page များတွင် လွှင့်တင်ဆောင်ရွက်ရန်နှင့် ဆောင်ရွက်ပြီးစီးမှု အခြေအနေကို ၂၀၂၆ ခုနှစ်၊ စက်တင်ဘာလ ၁၀ ရက်နေ့ နောက်ဆုံးထား၍ ကောင်စီရုံးသို့ ပြန်လည်ပေးပို့ရန် ၂၀၂၆ ခုနှစ်၊ ဩဂုတ်လ ၂၆ ရက်နေ့တွင် အကြောင်းကြားစာ ထုတ်ပြန်ခဲ့သည်။</p>
-                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On 26 August 2026, the Myanmar Accountancy Council issued an official notice instructing all accounting firms and businesses to comply with the UN Security Council Sanctions List updates (SC/16432 and SC/16433 under Resolution 1267). Entities are required to review the updates, publish the information on their official websites or Facebook pages, and submit proof of compliance to the Council by 10 September 2026.</p>
+                                    <h4 v-if="newsLanguage == 'my'">မြန်မာနိုင်ငံစာရင်းကောင်စီ၏ UNSCR Sanction List များ (SC/16432 & SC/16433) နှင့်စပ်လျဉ်း၍ အသိပေးညွှန်ကြားချက်အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing Myanmar Accountancy Council Notice on UNSCR Sanction List Updates (SC/16432 & SC/16433).</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/SC-16432-33.pdf" target="_blank" rel="noopener noreferrer" class="read-more">
                                             <i class="fa-solid fa-up-right-from-square me-2"></i>View UN Press Release
                                         </a>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -93,11 +86,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>18-AUGUST-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်း ၂၁ ခု ပြင်ဆင်ချက် (SC/16435)</h4>
-                                    <h4 v-if="newsLanguage == 'en'">UN Security Council Amends 21 Entries on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16435)</h4>
-
-                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">၂၀၂၆ ခုနှစ် ဩဂုတ်လ ၁၈ ရက်တွင် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်များ ၁၂၆၇ (၁၉၉၉)၊ ၁၉၈၉ (၂၀၁၁) နှင့် ၂၂၅၃ (၂၀၁၅) တို့အရ ဖွဲ့စည်းသည့် ကော်မတီသည် ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့အရေးယူမှုစာရင်းရှိ လူပုဂ္ဂိုလ်နှင့် အဖွဲ့အစည်းဆိုင်ရာ အမည်စာရင်း ၂၁ ခု၏ အချက်အလက်များကို ပြင်ဆင်သတ်မှတ်ခဲ့သည်။ အဆိုပါ ပြင်ဆင်ချက်များအရ သက်ဆိုင်ရာ ပုဂ္ဂိုလ်နှင့် အဖွဲ့အစည်းများသည် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၂၇၃၄ (၂၀၂၄) အရ ချမှတ်ထားသော ပိုင်ဆိုင်မှုများ ထိန်းချုပ်ခြင်း၊ ခရီးသွားလာခွင့် ပိတ်ပင်ခြင်းနှင့် လက်နက်တားဆီးပိတ်ဆို့မှုဆိုင်ရာ အစီအမံများအောက်တွင် ဆက်လက်တည်ရှိမည်ဖြစ်သည်။</p>
-                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On 18 August 2026, the Security Council Committee established pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) enacted amendments to 21 entries on its ISIL (Da'esh) and Al-Qaida Sanctions List. The entries of affected individuals and entities remain subject to the assets freeze, travel ban, and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), adopted under Chapter VII of the UN Charter.</p>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်း ၂၁ ခု ပြင်ဆင်ချက် (SC/16435) အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing UN Security Council Amendments to 21 Entries on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16435).</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="https://press.un.org/en/2026/sc16435.doc.htm" target="_blank" rel="noopener" class="read-more">
@@ -118,11 +108,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>08-JULY-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်းတစ်ခု ပြင်ဆင်ချက် (SC/16407)</h4>
-                                    <h4 v-if="newsLanguage == 'en'">UN Security Council Amends One Entry on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16407)</h4>
-
-                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">၂၀၂၆ ခုနှစ် ဇူလိုင်လ ၈ ရက်တွင် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်များ ၁၂၆၇ (၁၉၉၉)၊ ၁၉၈၉ (၂၀၁၁) နှင့် ၂၂၅၃ (၂၀၁၅) တို့အရ ဖွဲ့စည်းသည့် ကော်မတီသည် ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့အရေးယူမှုစာရင်းရှိ Hamidah Nabaggala (QDi.439) ၏ အချက်အလက်ကို ပြင်ဆင်သတ်မှတ်ခဲ့သည်။ ဤပြင်ဆင်ချက်အရ ၎င်းပုဂ္ဂိုလ်သည် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၂၇၃၄ (၂၀၂၄) အရ ချမှတ်ထားသော ပိုင်ဆိုင်မှုများ ထိန်းချုပ်ခြင်း၊ ခရီးသွားလာခွင့် ပိတ်ပင်ခြင်းနှင့် လက်နက်တားဆီးပိတ်ဆို့မှုဆိုင်ရာ အစီအမံများအောက်တွင် ဆက်လက်တည်ရှိနေမည်ဖြစ်သည်။</p>
-                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On 8 July 2026, the Security Council Committee established pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) amended one entry (Hamidah Nabaggala, QDi.439) on the ISIL (Da'esh) and Al-Qaida Sanctions List. The individual remains subject to the assets freeze, travel ban, and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), adopted under Chapter VII of the UN Charter.</p>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်းတစ်ခု ပြင်ဆင်ချက် (SC/16407) အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing UN Security Council Amendment to One Entry on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16407).</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="https://press.un.org/en/2026/sc16407.doc.htm" target="_blank" rel="noopener" class="read-more">
@@ -134,29 +121,6 @@
                         </div>
                     </div>
 
-                    <!-- News Card 5
-                    <div class="col-lg-12 mb-4">
-                        <div class="event-card-new">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-4 mb-3">
-                                    <img src="../assets/images/newspaper.jpg" alt="New News Article">
-                                </div>
-                                <div class="col-lg-9 col-md-8">
-                                    <h5>06-APRIL-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">မြန်မာနိုင်ငံစာရင်းကောင်စီ၏ ညွှန်ကြားချက်</h4>
-                                    <h4 v-if="newsLanguage == 'en'">Myanmar Accountancy Council Directive</h4>
-                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">မြန်မာနိုင်ငံစာရင်းကောင်စီသည် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ၏ နောက်ဆုံးထုတ်ပြန်ထားသော ပိတ်ဆို့အရေးယူမှုစာရင်းများကို လိုက်နာဆောင်ရွက်ရန် စာရင်းလုပ်ငန်းများအားလုံးသို့ ၂၀၂၆ ခုနှစ်၊ ဧပြီလ ၆ ရက်နေ့တွင် ညွှန်ကြားချက်တစ်ရပ် ထုတ်ပြန်ခဲ့သည် ။ စာရင်းလုပ်ငန်းများအနေဖြင့် အဆိုပါ ဆုံးဖြတ်ချက်အမှတ်များ (SC/16323၊ SC/16324 နှင့် SC/16325) ကို အချိန်နှင့်တစ်ပြေးညီ ဝင်ရောက်ကြည့်ရှုပြီး မိမိတို့၏ ဝက်ဘ်ဆိုက် (သို့မဟုတ်) Facebook စာမျက်နှာများတွင် လွှင့်တင်ဆောင်ရွက်ရမည်ဖြစ်သည် ။ ဆောင်ရွက်ပြီးစီးမှု အခြေအနေကို အထောက်အထားများနှင့်တကွ ၂၀၂၆ ခုနှစ်၊ ဧပြီလ ၂၀ ရက်နေ့ နောက်ဆုံးထား၍ ကောင်စီရုံးသို့ မပျက်မကွက် ပြန်လည်အစီရင်ခံတင်ပြရမည်ဖြစ်သည် ။</p>
-                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On April 6, 2026, the Myanmar Accountancy Council issued an official directive instructing all accounting firms and businesses to strictly comply with the recent UN Security Council Sanctions List updates. Accounting entities must review the updates (SC/16323, SC/16324, and SC/16325) and publish the information on their official websites or Facebook pages. Proof of compliance must be submitted to the Council no later than April 20, 2026.</p>
-                                    <div class="d-flex gap-3 flex-wrap mt-3">
-                                        <a href="/downloads/MAC.pdf" download class="read-more">
-                                            <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download PDF 
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                     <!-- News Card 5 — SC/16365, 21 May 2026 -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new">
@@ -166,11 +130,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>21-MAY-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ ဝင်ခွင့်ခုနစ်ခုကို ဖယ်ရှားချက် (SC/16365)</h4>
-                                    <h4 v-if="newsLanguage == 'en'">UN Security Council Removes Seven Entries from ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16365)</h4>
-
-                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">၂၀၂၆ ခုနှစ် မေလ ၂၁ ရက်တွင် ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်များ ၁၂၆၇ (၁၉၉၉)၊ ၁၉၈၉ (၂၀၁၁) နှင့် ၂၂၅၃ (၂၀၁၅) တို့အရ ဖွဲ့စည်းသည့် ကော်မတီသည် ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့အရေးယူမှုစာရင်းမှ ပုဂ္ဂိုလ် ၇ ဦးကို ဖယ်ရှားလိုက်ကြောင်း ကြေငြာသည်။ ဖယ်ရှားခံရသောသူများမှာ — Majeed Abdul Chaudhry၊ Mohammed Tufail၊ Mustafa Hajji Muhammad Khan၊ Hafiz Abdul Salam Bhuttavi၊ Aamir Ali Chaudhry၊ Maulana Fazlullah နှင့် Abdul Rehman Makki တို့ဖြစ်ကြသည်။ ဤဆောင်ရွက်ချက်ကြောင့် ကုလသမဂ္ဂ ပဋိညာဉ်စာတမ်း သတ်မှတ်ချက်အရ ထိုသူများအပေါ် ချမှတ်ထားသော ပိုင်ဆိုင်မှုများ ထိန်းချုပ်ခြင်း၊ ခရီးသွားလာခွင့် ပိတ်ပင်ခြင်းနှင့် လက်နက်တားဆီးမှုများ ရပ်ဆိုင်းသွားမည်ဖြစ်သည်။</p>
-                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">On 21 May 2026, the Security Council Committee established pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) removed seven entries from the ISIL (Da'esh) and Al-Qaida Sanctions List. The delisted individuals are: Majeed Abdul Chaudhry (QDi.054), Mohammed Tufail (QDi.056), Mustafa Hajji Muhammad Khan (QDi.306), Hafiz Abdul Salam Bhuttavi (QDi.307), Aamir Ali Chaudhry (QDi.312), Maulana Fazlullah (QDi.352), and Abdul Rehman Makki (QDi.433). As a result, the assets freeze, travel ban and arms embargo under Security Council resolution 2734 (2024) no longer apply to these individuals.</p>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ ဝင်ခွင့်ခုနစ်ခု ဖယ်ရှားချက် (SC/16365) အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing UN Security Council Removal of Seven Entries from ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16365).</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="https://press.un.org/en/2026/sc16365.doc.htm" target="_blank" rel="noopener" class="read-more">
@@ -191,10 +152,9 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>26-MARCH-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ၏ ပိတ်ဆို့အရေးယူမှုစာရင်း ထပ်မံထည့်သွင်းမှု</h4>
-                                    <h4 v-if="newsLanguage == 'en'">UN Security Council Sanctions List Updates</h4>
-                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီသည် သတင်းထုတ်ပြန်ချက် SC/16323၊ SC/16324 နှင့် SC/16325 တို့မှတစ်ဆင့် ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့အရေးယူမှုစာရင်းသို့ လူပုဂ္ဂိုလ် (၃) ဦးကို ထပ်မံထည့်သွင်းလိုက်သည်။ အဆိုပါ ထပ်မံထည့်သွင်းခံရသူများဖြစ်သည့် Abd El Hamid Salim Ibrahim Brukan Al-Khatouni ၊ Sami Jasim Muhammad Jaata Al-Jaburi  နှင့် Hamidah Nabagala တို့သည် ကုလသမဂ္ဂ ပဋိညာဉ်စာတမ်းအရ ပိုင်ဆိုင်မှုများ ထိန်းချုပ်ခံရခြင်း၊ ခရီးသွားလာခွင့် ပိတ်ပင်ခံရခြင်းနှင့် လက်နက်ရောင်းဝယ်မှု ပိတ်ဆို့ခံရခြင်းများ သက်ရောက်မည်ဖြစ်သည်။</p>
-                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">The UN Security Council Committee has issued press releases SC/16323, SC/16324, and SC/16325, adding three new individuals to the ISIL (Da'esh) and Al-Qaida Sanctions List. The listed individuals 'Abd El Hamid Salim Ibrahim Brukan Al-Khatouni', 'Sami Jasim Muhammad Jaata Al-Jaburi', and 'Hamidah Nabagala' are now subject to an asset freeze, travel ban, and arms embargo under Chapter VII of the UN Charter.</p>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ၏ ပိတ်ဆို့အရေးယူမှုစာရင်း ထပ်မံထည့်သွင်းမှု (SC/16323, SC/16324 & SC/16325) အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing UN Security Council Sanctions List Updates (SC/16323, SC/16324 & SC/16325).</h4>
+
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/sanctionlist.pdf" download class="read-more">
                                             <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download PDF 
@@ -214,10 +174,9 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>15-MARCH-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">၂၀၂၆ ခုနှစ်၊ ပြည်ထောင်စု၏အခွန်အကောက်ဥပဒေ</h4>
-                                    <h4 v-if="newsLanguage == 'en'">2026 Union Tax Law</h4>
-                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">အမျိုးသားကာကွယ်ရေးနှင့်လုံခြုံရေးကောင်စီသည် ၂၀၂၆ ခုနှစ်၊ ပြည်ထောင်စု၏အခွန်အကောက်ဥပဒေကို ထုတ်ပြန်လိုက်သည် ။ ဥပဒေအမှတ် ၁၈/၂၀၂၆ အရ ဤဥပဒေသည် ၂၀၂၆ ခုနှစ်၊ ဧပြီလ ၁ ရက်နေ့မှ စတင်အကျိုးသက်ရောက်မည်ဖြစ်ပြီး အထူးကုန်စည်ခွန်၊ ကုန်သွယ်လုပ်ငန်းခွန်၊ ဝင်ငွေခွန်နှင့် ရတနာခွန်ဆိုင်ရာ ပြဋ္ဌာန်းချက်များကို သတ်မှတ်ထားသည် ။</p>
-                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">The National Defence and Security Council of Myanmar has enacted the 2026 Union Tax Law (Law No. 18/2026) , effective 1 April 2026. The law establishes the tax rates and provisions for special goods tax, commercial tax, income tax, and gemstone tax.</p>
+                                    <h4 v-if="newsLanguage == 'my'">၂၀၂၆ ခုနှစ်၊ ပြည်ထောင်စု၏အခွန်အကောက်ဥပဒေ (ဥပဒေအမှတ် ၁၈/၂၀၂၆) အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing 2026 Union Tax Law (Law No. 18/2026).</h4>
+
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/2026-tax.pdf" download class="read-more">
                                             <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download PDF
@@ -237,10 +196,9 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>11-MARCH-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">၂၀၂၆ ခုနှစ်၊ ငွေကြေးခဝါချမှုတိုက်ဖျက်ရေးဥပဒေ — မြန်မာ</h4>
-                                    <h4 v-if="newsLanguage == 'en'">2026 Anti-Money Laundering Law — Myanmar</h4>
-                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">အမျိုးသားကာကွယ်ရေးနှင့် လုံခြုံရေးကောင်စီသည် ၂၀၂၆ ခုနှစ်၊ ငွေကြေးခဝါချမှုတိုက်ဖျက်ရေးဥပဒေကို ထုတ်ပြန်လိုက်သည်။ ဥပဒေအမှတ် ၁၆/၂၀၂၆ အရ ဘဏ်၊ ငွေရေးကြေးရေးအဖွဲ့အစည်းများနှင့် DNFBPs များသည် သတ်မှတ်ချက်များနှင့်အညီ လိုက်နာဆောင်ရွက်ရမည်။</p>
-                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">The State Administration Council of Myanmar has enacted the 2026 Anti-Money Laundering Law (Law No. 16/2026), effective 11 March 2026. The law establishes comprehensive obligations for banks, financial institutions, and DNFBPs covering customer due diligence, suspicious transaction reporting, record keeping, and compliance with FATF standards.</p>
+                                    <h4 v-if="newsLanguage == 'my'">၂၀၂၆ ခုနှစ်၊ ငွေကြေးခဝါချမှုတိုက်ဖျက်ရေးဥပဒေ (ဥပဒေအမှတ် ၁၆/၂၀၂၆) အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing 2026 Anti-Money Laundering Law (Law No. 16/2026).</h4>
+
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/AML-law-2026.pdf" download class="read-more">
                                             <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download PDF
@@ -260,10 +218,9 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>27-FEB-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">UNSCR ပိတ်ဆို့အရေးယူမှုစာရင်း အပ်ဒိတ် — မြန်မာနိုင်ငံစာရင်းကောင်စီ အသိပေးကြေညာချက်</h4>
-                                    <h4 v-if="newsLanguage == 'en'">UNSCR Sanction List Update — Myanmar Accountancy Council Notice</h4>
-                                    <p v-if="newsLanguage == 'my'" class="myanmar-text">မြန်မာနိုင်ငံစာရင်းကောင်စီမှ UNSCR Sanction List များနှင့်စပ်လျဉ်း၍ သိရှိလိုက်နာဆောင်ရွက်ရန် စီမံကိန်းများအတွက် အကြောင်းကြားစာ။ SC/16306 အပေါ် အချိန်နှင့်တစ်ပြေးညီ လုပ်ထုံးလုပ်နည်းနှင့်အညီ ဆောင်ရွက်ရန် လိုအပ်ပါသည်။</p>
-                                    <p v-if="newsLanguage == 'en'" class="myanmar-text">The Myanmar Accountancy Council has issued a notice regarding the UNSCR Sanction List (SC/16306, 27 February 2026). All relevant firms and DNFBPs are required to check and update their websites and webpages in accordance with the latest sanctions list update.</p>
+                                    <h4 v-if="newsLanguage == 'my'">UNSCR ပိတ်ဆို့အရေးယူမှုစာရင်း အပ်ဒိတ် (SC/16306) — မြန်မာနိုင်ငံစာရင်းကောင်စီ အသိပေးကြေညာချက်အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing UNSCR Sanction List Update (SC/16306) — Myanmar Accountancy Council Notice.</h4>
+
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/224.pdf" download class="read-more">
                                             <i class="fa-solid fa-file-pdf me-2 text-white"></i>Download PDF
@@ -641,7 +598,9 @@ import { onMounted, watch, ref } from 'vue'
     }
     .event-card-new h4 {
         color: #0f3780;
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.6;
         margin-bottom: 10px;
     }
     .event-card-new p {
