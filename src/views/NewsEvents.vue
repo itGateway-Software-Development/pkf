@@ -33,6 +33,28 @@
                         <button class="lang-btn" :class="{'active-lang': newsLanguage == 'en'}" @click="newsLanguage = 'en'">English</button>
                     </div>
 
+                    <!-- News Card 10 — SC/16465 (28 September 2026) -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mb-3">
+                                    <img src="../assets/images/newspaper.jpg" alt="UN SC/16465 Sanctions List">
+                                </div>
+                                <div class="col-lg-9 col-md-8">
+                                    <h5>28-SEPTEMBER-2026</h5>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်းတစ်ခု ပြင်ဆင်ချက် (SC/16465) အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing UN Security Council Amendment to One Entry on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16465).</h4>
+
+                                    <div class="d-flex gap-3 flex-wrap mt-3">
+                                        <a href="https://press.un.org/en/2026/sc16465.doc.htm" target="_blank" rel="noopener" class="read-more">
+                                            <i class="fa-solid fa-up-right-from-square me-2"></i>View UN Press Release
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- News Card 9 — SC/16446 (17 September 2026) -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new">
