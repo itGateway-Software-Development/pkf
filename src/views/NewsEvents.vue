@@ -42,8 +42,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>28-SEPTEMBER-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်းတစ်ခု ပြင်ဆင်ချက် (SC/16465) အား မျှဝေပါသည်။</h4>
-                                    <h4 v-if="newsLanguage == 'en'">Sharing UN Security Council Amendment to One Entry on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16465).</h4>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂလုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၁၂၆၇၊ ၁၉၈၉ နှင့် ၂၂၅၃ တို့ဖြင့် ၂၈-၉-၂၀၂၆ ရက်နေ့တွင် SC/16465 ဖြင့် ထုတ်ပြန်ထားသည့် UNSCR Sanction list update အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing the UNSCR Sanctions List update issued on 28 September 2026 under SC/16465 pursuant to United Nations Security Council Resolutions 1267, 1989, and 2253.</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="https://press.un.org/en/2026/sc16465.doc.htm" target="_blank" rel="noopener" class="read-more">
@@ -64,8 +64,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>17-SEPTEMBER-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂလုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၁၂၆၇ နှင့်  ဆုံးဖြတ်ချက်အမှတ် ၁၇၁၈ ဖြင့် ၄-၉-၂၀၂၆ ရက်နေ့တွင် SC/16446  ဖြင့် ထုတ်ပြန်ထားသည့် UNSCR Sanction list update အား မျှဝေပါသည်။</h4>
-                                    <h4 v-if="newsLanguage == 'en'">Sharing UNSCR Sanction list update issued on 4-9-2026 under UN Security Council Resolutions 1267 and 1718 via SC/16446.</h4>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂလုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၁၂၆၇ နှင့် ၁၇၁၈ တို့ဖြင့် ၄-၉-၂၀၂၆ ရက်နေ့တွင် SC/16446 ဖြင့် ထုတ်ပြန်ထားသည့် UNSCR Sanction list update အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing the UNSCR Sanctions List update issued on 4 September 2026 under SC/16446 pursuant to United Nations Security Council Resolutions 1267 and 1718.</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="https://press.un.org/en/2026/sc16446.doc.htm" target="_blank" rel="noopener" class="read-more">
@@ -86,8 +86,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>26-AUGUST-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">မြန်မာနိုင်ငံစာရင်းကောင်စီ၏ UNSCR Sanction List များ (SC/16432 & SC/16433) နှင့်စပ်လျဉ်း၍ အသိပေးညွှန်ကြားချက်အား မျှဝေပါသည်။</h4>
-                                    <h4 v-if="newsLanguage == 'en'">Sharing Myanmar Accountancy Council Notice on UNSCR Sanction List Updates (SC/16432 & SC/16433).</h4>
+                                    <h4 v-if="newsLanguage == 'my'">မြန်မာနိုင်ငံစာရင်းကောင်စီ၏ UNSCR Sanction List (SC/16432 နှင့် SC/16433) နှင့်စပ်လျဉ်း၍ ၂၆-၈-၂၀၂၆ ရက်နေ့တွင် ထုတ်ပြန်ထားသည့် အသိပေးညွှန်ကြားချက်အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing the Myanmar Accountancy Council Notice issued on 26 August 2026 on UNSCR Sanctions List updates under SC/16432 and SC/16433.</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/SC-16432-33.pdf" target="_blank" rel="noopener noreferrer" class="read-more">
@@ -108,8 +108,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>18-AUGUST-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်း ၂၁ ခု ပြင်ဆင်ချက် (SC/16435) အား မျှဝေပါသည်။</h4>
-                                    <h4 v-if="newsLanguage == 'en'">Sharing UN Security Council Amendments to 21 Entries on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16435).</h4>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂလုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၁၂၆၇၊ ၁၉၈၉ နှင့် ၂၂၅၃ တို့ဖြင့် ၁၈-၈-၂၀၂၆ ရက်နေ့တွင် SC/16435 ဖြင့် ထုတ်ပြန်ထားသည့် UNSCR Sanction list update အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing the UNSCR Sanctions List update issued on 18 August 2026 under SC/16435 pursuant to United Nations Security Council Resolutions 1267, 1989, and 2253.</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="https://press.un.org/en/2026/sc16435.doc.htm" target="_blank" rel="noopener" class="read-more">
@@ -130,8 +130,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>08-JULY-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ အမည်စာရင်းတစ်ခု ပြင်ဆင်ချက် (SC/16407) အား မျှဝေပါသည်။</h4>
-                                    <h4 v-if="newsLanguage == 'en'">Sharing UN Security Council Amendment to One Entry on ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16407).</h4>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂလုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၁၂၆၇၊ ၁၉၈၉ နှင့် ၂၂၅၃ တို့ဖြင့် ၈-၇-၂၀၂၆ ရက်နေ့တွင် SC/16407 ဖြင့် ထုတ်ပြန်ထားသည့် UNSCR Sanction list update အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing the UNSCR Sanctions List update issued on 8 July 2026 under SC/16407 pursuant to United Nations Security Council Resolutions 1267, 1989, and 2253.</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="https://press.un.org/en/2026/sc16407.doc.htm" target="_blank" rel="noopener" class="read-more">
@@ -152,8 +152,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>21-MAY-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ — ISIL (Da'esh) နှင့် Al-Qaida ပိတ်ဆို့မှုစာရင်းမှ ဝင်ခွင့်ခုနစ်ခု ဖယ်ရှားချက် (SC/16365) အား မျှဝေပါသည်။</h4>
-                                    <h4 v-if="newsLanguage == 'en'">Sharing UN Security Council Removal of Seven Entries from ISIL (Da'esh) and Al-Qaida Sanctions List (SC/16365).</h4>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂလုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၁၂၆၇၊ ၁၉၈၉ နှင့် ၂၂၅၃ တို့ဖြင့် ၂၁-၅-၂၀၂၆ ရက်နေ့တွင် SC/16365 ဖြင့် ထုတ်ပြန်ထားသည့် UNSCR Sanction list update အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing the UNSCR Sanctions List update issued on 21 May 2026 under SC/16365 pursuant to United Nations Security Council Resolutions 1267, 1989, and 2253.</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="https://press.un.org/en/2026/sc16365.doc.htm" target="_blank" rel="noopener" class="read-more">
@@ -174,8 +174,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>26-MARCH-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂ လုံခြုံရေးကောင်စီ၏ ပိတ်ဆို့အရေးယူမှုစာရင်း ထပ်မံထည့်သွင်းမှု (SC/16323, SC/16324 & SC/16325) အား မျှဝေပါသည်။</h4>
-                                    <h4 v-if="newsLanguage == 'en'">Sharing UN Security Council Sanctions List Updates (SC/16323, SC/16324 & SC/16325).</h4>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂလုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၁၂၆၇၊ ၁၉၈၉ နှင့် ၂၂၅၃ တို့ဖြင့် ၂၆-၃-၂၀၂၆ ရက်နေ့တွင် SC/16323, SC/16324 နှင့် SC/16325 တို့ဖြင့် ထုတ်ပြန်ထားသည့် UNSCR Sanction list update အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing the UNSCR Sanctions List updates issued on 26 March 2026 under SC/16323, SC/16324, and SC/16325 pursuant to United Nations Security Council Resolutions 1267, 1989, and 2253.</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/sanctionlist.pdf" download class="read-more">
@@ -240,8 +240,8 @@
                                 </div>
                                 <div class="col-lg-9 col-md-8">
                                     <h5>27-FEB-2026</h5>
-                                    <h4 v-if="newsLanguage == 'my'">UNSCR ပိတ်ဆို့အရေးယူမှုစာရင်း အပ်ဒိတ် (SC/16306) — မြန်မာနိုင်ငံစာရင်းကောင်စီ အသိပေးကြေညာချက်အား မျှဝေပါသည်။</h4>
-                                    <h4 v-if="newsLanguage == 'en'">Sharing UNSCR Sanction List Update (SC/16306) — Myanmar Accountancy Council Notice.</h4>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂလုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၁၂၆၇၊ ၁၉၈၉ နှင့် ၂၂၅၃ တို့ဖြင့် ၂၇-၂-၂၀၂၆ ရက်နေ့တွင် SC/16306 ဖြင့် ထုတ်ပြန်ထားသည့် UNSCR Sanction list update (မြန်မာနိုင်ငံစာရင်းကောင်စီ အသိပေးကြေညာချက်) အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing the UNSCR Sanctions List update issued on 27 February 2026 under SC/16306 pursuant to United Nations Security Council Resolutions 1267, 1989, and 2253 — Myanmar Accountancy Council Notice.</h4>
 
                                     <div class="d-flex gap-3 flex-wrap mt-3">
                                         <a href="/downloads/224.pdf" download class="read-more">
