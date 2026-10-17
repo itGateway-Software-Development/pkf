@@ -59,7 +59,7 @@
                                 <label class="form-label fw-semibold">Phone Number <span class="text-danger">*</span></label>
                                 <div class="input-group">
                                     <span class="input-group-text bg-light border-end-0"><i class="fa-solid fa-phone text-muted"></i></span>
-                                    <input type="tel" v-model="form.phone" class="form-control border-start-0" placeholder="e.g. +95 912345678" required />
+                                    <input type="tel" v-model="form.phone" class="form-control border-start-0" placeholder="e.g. 09xxxxxxxxx" required />
                                 </div>
                             </div>
 
@@ -182,8 +182,17 @@ export default {
         });
 
         const jobTitle = computed(() => {
-            if (props.career === 'careers') {
-                return 'Junior Accountant (Tax & Corporate Compliance)';
+            if (props.career === 'tax-corporate-services-apprentice') {
+                return 'Tax & Corporate Services Apprentice';
+            }
+            if (props.career === 'junior-tax-compliance-associate') {
+                return 'Junior Tax & Compliance Associate';
+            }
+            if (props.career === 'senior-tax-corporate-compliance-associate' || props.career === 'senior-tax-compliance-associate') {
+                return 'Senior Tax & Corporate Compliance Associate';
+            }
+            if (props.career === 'junior-accountant' || props.career === 'careers') {
+                return 'Junior Tax & Compliance Associate';
             }
             // Fallback dynamically from slug
             if (props.career) {
@@ -192,7 +201,7 @@ export default {
                     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                     .join(' ');
             }
-            return 'Junior Accountant';
+            return 'Junior Tax & Compliance Associate';
         });
 
         const submitForm = async () => {

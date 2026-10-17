@@ -312,7 +312,7 @@ header {
 
 .nav-link {
   color: #0045b6 !important;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   padding: 10px 20px !important;
   letter-spacing: 0.3px;
@@ -385,7 +385,7 @@ header {
 .active-menu {
   background: #0045b6;
   color: #fff !important;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   border-radius: 6px;
   padding: 10px 20px !important;
@@ -439,7 +439,7 @@ header {
     box-shadow: 0 0 0 0.2rem rgba(0, 69, 182, 0.25) !important;
   }
   .nav-link {
-    font-size: 12.5px;
+    font-size: 14.5px;
     padding: 10px 14px !important;
   }
 }

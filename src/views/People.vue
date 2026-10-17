@@ -134,7 +134,7 @@ export default {
       },
       {
         name: 'Nway Nandar Aung',
-        position: 'Audit Manager',
+        position: 'Senior Audit Manager',
         email: 'nwaynandaraung@pkf.com.mm',
         phone: '+959421086629',
         linkedin: null,
