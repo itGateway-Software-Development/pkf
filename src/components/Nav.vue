@@ -129,10 +129,10 @@
             </li>
             <li class="nav-item">
               <router-link
-                to="/careers/careers"
+                to="/jobopportunities"
                 class="nav-link"
                 :class="{
-                  'active-menu': currentRoute.substring(0, 8) == '/careers',
+                  'active-menu': currentRoute && (currentRoute.startsWith('/jobopportunities') || currentRoute.startsWith('/careers')),
                 }"
                 >JOB OPPORTUNITIES</router-link
               >

@@ -260,6 +260,71 @@
 
                 <!-- EVENTS TAB -->
                 <div v-else-if="category == 'events'" key="events" class="row mt-3 pt-3">
+                    <!-- Event: Celebrating Thadinkyut with smiles, cheers and blessings -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new p-4 shadow-sm rounded" style="background: #fff; border-top: 4px solid #0045b6;">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 mb-2">
+                                <h4 class="fw-bold mb-0" style="color: #0045b6;">Celebrating Thadinkyut with smiles, cheers and blessings</h4>
+                                <span class="badge bg-light text-primary border px-3 py-2 rounded-pill fw-semibold" style="color: #0045b6 !important; border-color: #0045b6 !important;">
+                                    <i class="fa-solid fa-camera me-1"></i> 10 Photos
+                                </span>
+                            </div>
+                            <p class="text-muted mb-2" style="font-size: 15px;">The PKF Myanmar team gathered in traditional attire to celebrate the graceful Thadingyut Lighting Festival, sharing gratitude, joyful smiles and heartfelt blessings with our valued partners and mentors.</p>
+                            <h5 class="text-muted mb-3 small">
+                                <i class="fa-regular fa-calendar me-2" style="color: #0045b6;"></i>22-OCT-2026 
+                                <span class="ms-3 text-muted"><i class="fa-solid fa-location-dot me-2" style="color: #0045b6;"></i>PKF Myanmar Office</span>
+                            </h5>
+
+                            <!-- Photos Grid: 3-photo preview by default (Facebook style) -->
+                            <div class="row g-3">
+                                <!-- Photo 1 -->
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="fb-photo-card shadow-sm" @click="openLightbox(thadingyutImages, 0)">
+                                        <img src="/downloads/events/thadingyut-2026-1.jpg" alt="PKF Myanmar Team Celebrating Thadingyut">
+                                    </div>
+                                </div>
+
+                                <!-- Photo 2 -->
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="fb-photo-card shadow-sm" @click="openLightbox(thadingyutImages, 1)">
+                                        <img src="/downloads/events/thadingyut-2026-2.jpg" alt="PKF Myanmar Staff Gathering">
+                                    </div>
+                                </div>
+
+                                <!-- Photo 3 with +7 Facebook style overlay when collapsed -->
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="fb-photo-card shadow-sm" @click="openLightbox(thadingyutImages, 2)">
+                                        <img src="/downloads/events/thadingyut-2026-3.jpg" alt="Paying Respects to Elders and Mentors">
+                                        <div v-if="!showAllThadinkyutPhotos" class="fb-more-overlay">
+                                            <span class="fb-plus-number">+7</span>
+                                            <span class="fb-plus-text"><i class="fa-solid fa-images me-1"></i> More Photos</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Remaining 7 Photos revealed when expanded -->
+                                <template v-if="showAllThadinkyutPhotos">
+                                    <div v-for="(photo, pIdx) in thadingyutImages.slice(3)" :key="pIdx" class="col-md-4 col-sm-6">
+                                        <div class="fb-photo-card shadow-sm" @click="openLightbox(thadingyutImages, pIdx + 3)">
+                                            <img :src="photo" :alt="'Thadingyut Photo ' + (pIdx + 4)">
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+
+                            <!-- Expand / Collapse Action Bar -->
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mt-3 pt-2 border-top gap-2">
+                                <small class="text-muted">
+                                    <i class="fa-regular fa-hand-pointer me-1 text-primary"></i> Click on <strong>+7</strong> or any photo to browse with the slider
+                                </small>
+                                <button class="btn-toggle-grid" @click="showAllThadinkyutPhotos = !showAllThadinkyutPhotos">
+                                    <i class="fa-solid me-1" :class="showAllThadinkyutPhotos ? 'fa-compress' : 'fa-grid-2'"></i>
+                                    {{ showAllThadinkyutPhotos ? 'Show 3 Photos Only' : 'Expand All 10 Photos' }}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Event: Uniform Distribution -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new p-4 shadow-sm rounded" style="background: #fff; border-top: 4px solid #0045b6;">
@@ -390,13 +455,40 @@
 
             </div>
         </div>
-        <!-- Lightbox Modal -->
+        <!-- Lightbox Modal with Fixed Controls & Thumbnail Slider -->
         <div v-if="isLightboxOpen" class="lightbox-overlay" @click="closeLightbox">
+            <!-- Fixed Top Header Controls -->
+            <div class="lightbox-top-bar" @click.stop>
+                <div class="lightbox-counter">{{ currentImageIndex + 1 }} / {{ eventImages.length }}</div>
+                <div class="close-btn" @click="closeLightbox" title="Close (Esc)"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+
+            <!-- Fixed Position Slider Navigation Buttons -->
+            <button class="nav-btn prev-btn" @click.stop="prevImage" title="Previous photo (Left Arrow)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="nav-btn next-btn" @click.stop="nextImage" title="Next photo (Right Arrow)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Centered Image & Thumbnails Content -->
             <div class="lightbox-content" @click.stop>
-                <div class="close-btn" @click="closeLightbox"><i class="fa-solid fa-xmark"></i></div>
-                <div class="nav-btn prev-btn" @click.stop="prevImage"><i class="fa-solid fa-chevron-left"></i></div>
-                <img :src="eventImages[currentImageIndex]" alt="Zoomed Event Photo" class="lightbox-img">
-                <div class="nav-btn next-btn" @click.stop="nextImage"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="lightbox-img-wrap">
+                    <img :src="eventImages[currentImageIndex]" alt="Zoomed Event Photo" class="lightbox-img">
+                </div>
+
+                <!-- Interactive Thumbnail Slider Strip inside Lightbox -->
+                <div v-if="eventImages.length > 1" class="lightbox-thumbnails-wrap d-flex justify-content-center align-items-center gap-2 mt-3 px-2 overflow-auto">
+                    <div 
+                        v-for="(img, idx) in eventImages" 
+                        :key="idx" 
+                        class="lightbox-thumb-container"
+                        :class="{'active-thumb': idx === currentImageIndex}"
+                        @click.stop="currentImageIndex = idx"
+                    >
+                        <img :src="img" :alt="'Thumbnail ' + (idx + 1)" class="lightbox-thumb" />
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -404,7 +496,7 @@
 </template>
 
 <script>
-import { onMounted, watch, ref } from 'vue'
+import { onMounted, onUnmounted, watch, ref } from 'vue'
     export default {
         setup() {
             let category = ref('news')
@@ -413,6 +505,20 @@ import { onMounted, watch, ref } from 'vue'
             let isLightboxOpen = ref(false)
             let currentImageIndex = ref(0)
             let eventImages = ref([])
+            let showAllThadinkyutPhotos = ref(false)
+
+            const thadingyutImages = [
+                '/downloads/events/thadingyut-2026-1.jpg',
+                '/downloads/events/thadingyut-2026-2.jpg',
+                '/downloads/events/thadingyut-2026-3.jpg',
+                '/downloads/events/thadingyut-2026-4.jpg',
+                '/downloads/events/thadingyut-2026-5.jpg',
+                '/downloads/events/thadingyut-2026-6.jpg',
+                '/downloads/events/thadingyut-2026-7.jpg',
+                '/downloads/events/thadingyut-2026-8.jpg',
+                '/downloads/events/thadingyut-2026-9.jpg',
+                '/downloads/events/thadingyut-2026-10.jpg',
+            ]
 
             const openLightbox = (imagesArray, index) => {
                 eventImages.value = imagesArray
@@ -434,13 +540,41 @@ import { onMounted, watch, ref } from 'vue'
                 currentImageIndex.value = (currentImageIndex.value + 1) % eventImages.value.length
             }
 
+            const handleKeyDown = (e) => {
+                if (!isLightboxOpen.value) return
+                if (e.key === 'ArrowLeft') {
+                    prevImage()
+                } else if (e.key === 'ArrowRight') {
+                    nextImage()
+                } else if (e.key === 'Escape') {
+                    closeLightbox()
+                }
+            }
+
             watch([category, newsLanguage], () => {
                 window.scrollTo(0,0);
             })
             onMounted(() => {
                 window.scrollTo(0,0)
+                window.addEventListener('keydown', handleKeyDown)
             })
-            return { category, newsLanguage, isLightboxOpen, currentImageIndex, eventImages, openLightbox, closeLightbox, prevImage, nextImage }
+            onUnmounted(() => {
+                window.removeEventListener('keydown', handleKeyDown)
+            })
+
+            return { 
+                category, 
+                newsLanguage, 
+                isLightboxOpen, 
+                currentImageIndex, 
+                eventImages, 
+                thadingyutImages,
+                showAllThadinkyutPhotos,
+                openLightbox, 
+                closeLightbox, 
+                prevImage, 
+                nextImage 
+            }
         }
     }
 </script>
@@ -453,74 +587,134 @@ import { onMounted, watch, ref } from 'vue'
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.85);
+        background: rgba(0, 0, 0, 0.88);
         z-index: 99999;
         display: flex;
         justify-content: center;
         align-items: center;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(8px);
     }
-    .lightbox-content {
-        position: relative;
-        max-width: 90%;
-        max-height: 90vh;
+    .lightbox-top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 22px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100005;
+        pointer-events: none;
     }
-    .lightbox-img {
-        max-width: 100%;
-        max-height: 90vh;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        object-fit: contain;
+    .lightbox-top-bar > * {
+        pointer-events: auto;
+    }
+    .lightbox-counter {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 6px 16px;
+        border-radius: 20px;
+        letter-spacing: 1px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(4px);
     }
     .close-btn {
-        position: absolute;
-        top: -45px;
-        right: 0px;
         color: white;
-        font-size: 24px;
+        font-size: 22px;
         cursor: pointer;
-        background: rgba(255, 255, 255, 0.15);
-        width: 40px;
-        height: 40px;
+        background: rgba(255, 255, 255, 0.18);
+        width: 44px;
+        height: 44px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 0.3s ease;
+        transition: all 0.25s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(4px);
     }
     .close-btn:hover {
         background: #0045b6;
+        border-color: #0045b6;
+        transform: scale(1.1);
     }
+
+    /* Fixed Navigation Buttons - Consistent Across All Photos */
     .nav-btn {
-        position: absolute;
+        position: fixed;
         top: 50%;
         transform: translateY(-50%);
         color: white;
-        font-size: 24px;
+        font-size: 22px;
         cursor: pointer;
-        background: rgba(255, 255, 255, 0.15);
-        width: 50px;
-        height: 50px;
+        background: rgba(255, 255, 255, 0.2);
+        width: 54px;
+        height: 54px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 0.3s ease;
-        z-index: 10;
+        transition: all 0.25s ease;
+        z-index: 100004;
         user-select: none;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(4px);
     }
     .nav-btn:hover {
         background: #0045b6;
+        color: #ffffff;
+        transform: translateY(-50%) scale(1.12);
+        box-shadow: 0 4px 18px rgba(0, 69, 182, 0.6);
+        border-color: #0045b6;
     }
     .prev-btn {
-        left: -65px;
+        left: 32px;
     }
     .next-btn {
-        right: -65px;
+        right: 32px;
+    }
+
+    .lightbox-content {
+        position: relative;
+        max-width: 80vw;
+        max-height: 84vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 100002;
+    }
+    .lightbox-img-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 72vh;
+    }
+    .lightbox-img {
+        max-width: 76vw;
+        max-height: 72vh;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+        object-fit: contain;
     }
     @media (max-width: 768px) {
-        .prev-btn { left: 10px; background: rgba(0,0,0,0.5); }
-        .next-btn { right: 10px; background: rgba(0,0,0,0.5); }
+        .nav-btn {
+            width: 42px;
+            height: 42px;
+            font-size: 18px;
+        }
+        .prev-btn { left: 10px; }
+        .next-btn { right: 10px; }
+        .lightbox-top-bar { padding: 14px 16px; }
+        .lightbox-content {
+            max-width: 95vw;
+        }
+        .lightbox-img {
+            max-width: 92vw;
+            max-height: 64vh;
+        }
     }
     .zoom-hover {
         transition: 0.3s ease;
@@ -528,6 +722,115 @@ import { onMounted, watch, ref } from 'vue'
     .zoom-hover:hover {
         transform: scale(1.02);
         filter: brightness(1.1);
+    }
+
+    /* Facebook-Style Photo Grid & Overlay */
+    .fb-photo-card {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 220px;
+        cursor: pointer;
+        background: transparent;
+    }
+    .event-card-new .fb-photo-card img,
+    .fb-photo-card img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+        transition: transform 0.35s ease, filter 0.35s ease;
+    }
+    .fb-photo-card:hover img {
+        transform: scale(1.05);
+    }
+    .fb-more-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(10, 38, 86, 0.65);
+        backdrop-filter: blur(2px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .fb-photo-card:hover .fb-more-overlay {
+        background: rgba(0, 69, 182, 0.82);
+    }
+    .fb-plus-number {
+        font-size: 2.8rem;
+        font-weight: 800;
+        line-height: 1;
+        color: #ffffff;
+        letter-spacing: 1px;
+        text-shadow: 0 3px 12px rgba(0, 0, 0, 0.6);
+    }
+    .fb-plus-text {
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 8px;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 4px 14px;
+        border-radius: 20px;
+        color: #ffffff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    /* Toggle Grid Button */
+    .btn-toggle-grid {
+        background: transparent;
+        border: 1.5px solid #0045b6;
+        color: #0045b6;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 5px 16px;
+        border-radius: 20px;
+        transition: all 0.25s ease;
+        cursor: pointer;
+    }
+    .btn-toggle-grid:hover {
+        background: #0045b6;
+        color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 69, 182, 0.25);
+        transform: translateY(-1px);
+    }
+
+    /* Slider Thumbnails */
+    .lightbox-thumbnails-wrap {
+        max-width: 90vw;
+        overflow-x: auto;
+        padding: 6px 0;
+        scrollbar-width: thin;
+    }
+    .lightbox-thumb-container {
+        border-radius: 6px;
+        overflow: hidden;
+        border: 2px solid transparent;
+        cursor: pointer;
+        opacity: 0.6;
+        transition: all 0.2s ease;
+        flex-shrink: 0;
+    }
+    .lightbox-thumb-container:hover {
+        opacity: 0.95;
+        transform: translateY(-2px);
+    }
+    .lightbox-thumb-container.active-thumb {
+        opacity: 1;
+        border-color: #0045b6;
+        box-shadow: 0 0 10px rgba(0, 69, 182, 0.8);
+        transform: scale(1.08);
+    }
+    .lightbox-thumb {
+        width: 65px;
+        height: 48px;
+        object-fit: cover;
+        display: block;
     }
 
     .events {

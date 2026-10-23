@@ -1,7 +1,7 @@
 <template>
     <div class="col-lg-3 col-md-4 career-category">
         <div class="side-link" :class="{'active-link' : career == 'junior-auditor'}" @click="goPage('junior-auditor')">
-            <router-link to="/careers/junior-auditor" :class="{'text-white' : career == 'junior-auditor'}">JUNIOR AUDITOR </router-link>
+            <router-link to="/jobopportunities/junior-auditor" :class="{'text-white' : career == 'junior-auditor'}">JUNIOR AUDITOR </router-link>
         </div>
         <div class="side-link" :class="{'active-link' : career == 'audit-supervisor'}" @click="goPage('audit-supervisor')">
             <router-link to="/services/audit-supervisor" :class="{'text-white' : career == 'audit-supervisor'}">AUDIT SUPERVISOR</router-link>
@@ -18,7 +18,7 @@
         props:['career'],
         setup() {
             let router = useRouter();
-            let goPage = (name) => router.push(`/careers/${name}`);
+            let goPage = (name) => router.push(`/jobopportunities/${name}`);
 
             return {goPage}
         }

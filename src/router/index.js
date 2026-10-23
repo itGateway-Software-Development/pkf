@@ -24,16 +24,38 @@ const routes = [
     component: () => import('../views/NewsEvents.vue')
   },
   {
-    path: '/careers/:career',
-    name: 'Careers',
+    path: '/jobopportunities',
+    name: 'JobOpportunities',
     component: () => import('../views/Careers.vue'),
     props: true,
   },
   {
-    path: '/careers/:career/apply',
+    path: '/jobopportunities/:career',
+    name: 'JobDetail',
+    component: () => import('../views/Careers.vue'),
+    props: true,
+  },
+  {
+    path: '/jobopportunities/:career/apply',
     name: 'ApplyJob',
     component: () => import('../views/ApplyJob.vue'),
     props: true,
+  },
+  {
+    path: '/careers/careers',
+    redirect: '/jobopportunities',
+  },
+  {
+    path: '/careers',
+    redirect: '/jobopportunities',
+  },
+  {
+    path: '/careers/:career/apply',
+    redirect: to => `/jobopportunities/${to.params.career}/apply`,
+  },
+  {
+    path: '/careers/:career',
+    redirect: to => `/jobopportunities/${to.params.career}`,
   },
   {
     path: '/news-events/:event',

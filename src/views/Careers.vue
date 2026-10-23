@@ -123,7 +123,7 @@
                         <div class="apply-section text-center mt-5 pt-5 border-top">
                             <div class="apply-cta-box bg-light p-5 rounded-4 shadow-sm d-inline-block w-100" style="max-width: 600px;">
                                 <h3 class="mb-4 fw-bold" style="color: #0f3780;">Apply now and grow with us!</h3>
-                                <router-link to="/careers/tax-corporate-services-apprentice/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
+                                <router-link to="/jobopportunities/tax-corporate-services-apprentice/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
                                     Apply Now
                                 </router-link>
                             </div>
@@ -188,7 +188,7 @@
                         <div class="apply-section text-center mt-5 pt-5 border-top">
                             <div class="apply-cta-box bg-light p-5 rounded-4 shadow-sm d-inline-block w-100" style="max-width: 600px;">
                                 <h3 class="mb-4 fw-bold" style="color: #0f3780;">Apply now and grow with us!</h3>
-                                <router-link to="/careers/tax-corporate-services-apprentice/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
+                                <router-link to="/jobopportunities/tax-corporate-services-apprentice/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
                                     ယခုပင် လျှောက်ထားပါ
                                 </router-link>
                             </div>
@@ -256,7 +256,7 @@
                         <div class="apply-section text-center mt-5 pt-5 border-top">
                             <div class="apply-cta-box bg-light p-5 rounded-4 shadow-sm d-inline-block w-100" style="max-width: 600px;">
                                 <h3 class="mb-4 fw-bold" style="color: #0f3780;">Apply now and grow with us!</h3>
-                                <router-link to="/careers/junior-tax-compliance-associate/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
+                                <router-link to="/jobopportunities/junior-tax-compliance-associate/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
                                     Apply Now
                                 </router-link>
                             </div>
@@ -310,7 +310,7 @@
                         <div class="apply-section text-center mt-5 pt-5 border-top">
                             <div class="apply-cta-box bg-light p-5 rounded-4 shadow-sm d-inline-block w-100" style="max-width: 600px;">
                                 <h3 class="mb-4 fw-bold" style="color: #0f3780;">Apply now and grow with us!</h3>
-                                <router-link to="/careers/junior-tax-compliance-associate/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
+                                <router-link to="/jobopportunities/junior-tax-compliance-associate/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
                                     ယခုပင် လျှောက်ထားပါ
                                 </router-link>
                             </div>
@@ -381,7 +381,7 @@
                         <div class="apply-section text-center mt-5 pt-5 border-top">
                             <div class="apply-cta-box bg-light p-5 rounded-4 shadow-sm d-inline-block w-100" style="max-width: 600px;">
                                 <h3 class="mb-4 fw-bold" style="color: #0f3780;">Apply now and grow with us!</h3>
-                                <router-link to="/careers/senior-tax-corporate-compliance-associate/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
+                                <router-link to="/jobopportunities/senior-tax-corporate-compliance-associate/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
                                     Apply Now
                                 </router-link>
                             </div>
@@ -438,7 +438,7 @@
                         <div class="apply-section text-center mt-5 pt-5 border-top">
                             <div class="apply-cta-box bg-light p-5 rounded-4 shadow-sm d-inline-block w-100" style="max-width: 600px;">
                                 <h3 class="mb-4 fw-bold" style="color: #0f3780;">Apply now and grow with us!</h3>
-                                <router-link to="/careers/senior-tax-corporate-compliance-associate/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
+                                <router-link to="/jobopportunities/senior-tax-corporate-compliance-associate/apply" class="contact-btn px-5 py-3" style="font-size: 16px;">
                                     ယခုပင် လျှောက်ထားပါ
                                 </router-link>
                             </div>

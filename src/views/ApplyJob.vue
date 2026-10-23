@@ -20,7 +20,7 @@
                             <strong style="color: #0045b6;">{{ jobTitle }}</strong> position. 
                             Our recruitment team will review your credentials and contact you shortly.
                         </p>
-                        <router-link to="/careers/careers" class="back-btn px-5 py-3 d-inline-block">
+                        <router-link to="/jobopportunities" class="back-btn px-5 py-3 d-inline-block">
                             Back to Job Opportunities <i class="fa-solid fa-arrow-left ms-2"></i>
                         </router-link>
                     </div>
