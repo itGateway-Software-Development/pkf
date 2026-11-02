@@ -33,6 +33,28 @@
                         <button class="lang-btn" :class="{'active-lang': newsLanguage == 'en'}" @click="newsLanguage = 'en'">English</button>
                     </div>
 
+                    <!-- News Card 11 — SC/16480 (15 October 2026) -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="event-card-new">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mb-3">
+                                    <img src="../assets/images/newspaper.jpg" alt="UN SC/16480 Sanctions List">
+                                </div>
+                                <div class="col-lg-9 col-md-8">
+                                    <h5>15-OCTOBER-2026</h5>
+                                    <h4 v-if="newsLanguage == 'my'">ကုလသမဂ္ဂလုံခြုံရေးကောင်စီ ဆုံးဖြတ်ချက်အမှတ် ၁၂၆၇၊ ၁၉၈၉ နှင့် ၂၂၅၃ တို့ဖြင့် ၁၅-၁၀-၂၀၂၆ ရက်နေ့တွင် SC/16480 ဖြင့် ထုတ်ပြန်ထားသည့် UNSCR Sanction list update အား မျှဝေပါသည်။</h4>
+                                    <h4 v-if="newsLanguage == 'en'">Sharing the UNSCR Sanctions List update issued on 15 October 2026 under SC/16480 pursuant to United Nations Security Council Resolutions 1267, 1989, and 2253.</h4>
+
+                                    <div class="d-flex gap-3 flex-wrap mt-3">
+                                        <a href="https://press.un.org/en/2026/sc16480.doc.htm" target="_blank" rel="noopener" class="read-more">
+                                            <i class="fa-solid fa-up-right-from-square me-2"></i>View UN Press Release
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- News Card 10 — SC/16465 (28 September 2026) -->
                     <div class="col-lg-12 mb-4">
                         <div class="event-card-new">
